@@ -1,7 +1,14 @@
-# Up
+---
+layout: post
+date: 2013-03-29 15:50:45
+title: Hi,Pages 
+categories: [life]
+tags: [life]
+published: true
+summary: 折腾了一阵子了，我的Github Pages终于可以见人了！
+---
 
-Up is a clean and beautiful [Bootstrap](http://getbootstrap.com) based layout
-for [Jekyll](https://github.com/mojombo/jekyll).
+今天结束了在网易工作、生活和学习的日子。
 
 This is designed to be an easy layout to modify for your own blog. It was
 based on [zachholman's](http://zachholman.com/) blog themes: the "old" one, now
@@ -11,7 +18,7 @@ took something from [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootst
 and, of course, I'm using [bootstrap](https://github.com/twitter/bootstrap) as
 a base for all the thing.
 
-![Up](http://i.imgur.com/4bKG5.png)
+<img src="http://i.imgur.com/4bKG5.png" class="post" alt="Up" width="40%" heigth="40%" />
 
 ## Installation
 
@@ -28,20 +35,20 @@ You should have a server up and running locally at <http://localhost:4000>.
 Next you'll want to change a few things. The list of files you may want to
 change is the following:
 
-- [_config.yml](https://github.com/caarlos0/up/blob/gh-pages/_config.yml): Put
+- [_config.yml](https://github.com/caarlos0/up/blob/master/_config.xml): Put
 your config there, almost everything will be up and running.
-- [about.html](https://github.com/caarlos0/up/blob/gh-pages/about.html): Well, that's
+- [about.yml](https://github.com/caarlos0/up/blob/master/about.html): Well, that's
 about you, I'll gonna change it if I am you... OH WAIT!
-- [CNAME](https://github.com/caarlos0/up/blob/gh-pages/CNAME): If you're using
-this on GitHub Pages with a custom domain name, you'll want to change this
-to be the domain you're going to use. All that should be in here is a
-domain name on the first line and nothing else (like: `example.com`).
-- [favicon.ico](https://github.com/caarlos0/up/blob/gh-pages/favicon.ico): This
-is a smaller version of my gravatar for use as the icon in your browser's
-address bar. You should change it to whatever you'd like.
-- [apple-touch-icon.jpg](https://github.com/caarlos0/up/blob/gh-pages/apple-touch-icon.jpg):
-Again, this is my gravatar, and it shows up in iOS and various other apps
-that use this file as an "icon" for your site.
+- [CNAME](https://github.com/caarlos0/up/blob/master/CNAME): If you're using
+  this on GitHub Pages with a custom domain name, you'll want to change this
+  to be the domain you're going to use. All that should be in here is a
+  domain name on the first line and nothing else (like: `example.com`).
+- [favicon.ico](https://github.com/caarlos0/up/blob/master/favicon.ico): This
+  is a smaller version of my gravatar for use as the icon in your browser's
+  address bar. You should change it to whatever you'd like.
+- [apple-touch-icon.png](https://github.com/caarlos0/up/blob/master/apple-touch-icon.png):
+  Again, this is my gravatar, and it shows up in iOS and various other apps
+  that use this file as an "icon" for your site.
 
 
 ## Deployment

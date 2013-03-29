@@ -1,16 +1,21 @@
 markdown: rdiscount
 pygments: true
+safe: false
 permalink: /posts/:year/:month/:title
+paginate: 10
 auto: true
 rdiscount:
   extensions: [smart]
-title : Bill的私房钱
-production_url : http://jingege.github.com
+title: Bill的私房钱
+production_url: http://jingege.github.com
 description: "Througths, flamewars, utilities, tutorials, codes, projects and other things by Bill."
 disqus_shortname: shoru
 analytics: UA-39244883-1
 gauges: 50f2b533613f5d7c8000000c
-author :
-  name : Bill Zhang
-  github : jingege
-  twitter : shoru
+author:
+  name: Bill Zhang
+  github: jingege
+  twitter: shoru
+  email: jingege.me#gmail.com
+
+exclude: [README.md, LICENSE, Gemfile, Gemfile.lock, Makefile, Rakefile]

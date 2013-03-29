@@ -12,7 +12,7 @@
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
-  <link href="/css/up.min.css" rel="stylesheet">
+  <link href="/css/up.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
   rel='stylesheet' type='text/css'>
 
@@ -31,6 +31,9 @@
         <a class="brand" href="/">{{ site.title }}</a>
         <ul class="nav">
           <li><a href="/about">About</a></li>
+          {% for cat in site.categories %}
+            <li><a href="/category/{{ cat[0] }}">{{ cat[0] }}</a></li>
+          {% endfor %}
         </ul>
         <ul class="nav pull-right">
           <li>

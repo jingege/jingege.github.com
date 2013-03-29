@@ -8,7 +8,16 @@ layout: layout
   </h1>
 
   <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
+    {{ page.date | date: "%B %e, %Y" }}&nbsp;
+    Categories:
+    {% for foo in page.categories %}
+      <a href="/category/{{ foo }}">{{ foo }}</a>
+    {% endfor%}
+    &nbsp;
+    Tags:
+    {% for bar in page.tags %}
+      <a href="/tag/{{ bar }}">{{ bar }}</a>
+    {% endfor%}
   </section>
 
   {{ content }}
