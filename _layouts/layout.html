@@ -13,6 +13,9 @@
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
   <link href="/css/up.css" rel="stylesheet">
+  <!-- 1. Moot style -->
+  <link rel="stylesheet" type="text/css" href="//cdn.moot.it/1/moot.css" />
+
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'
   rel='stylesheet' type='text/css'>
 
@@ -20,7 +23,11 @@
   <link href="/css/font-awesome-ie7.css" rel="stylesheet">
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
+  <!-- jQuery library (v1.7+ required) -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 
+  <!-- Moot application -->
+  <script src="//cdn.moot.it/1/moot.min.js"></script>
   <link rel="apple-touch-icon" href="/apple-touch-icon.jpg" />
 </head>
 
@@ -30,7 +37,7 @@
       <div class="container">
         <a class="brand" href="/">{{ site.title }}</a>
         <ul class="nav">
-          <li><a href="/about">About</a></li>
+          <li><a href="/about.html">About</a></li>
           {% for cat in site.categories %}
             <li><a href="/category/{{ cat[0] }}">{{ cat[0] }}</a></li>
           {% endfor %}
