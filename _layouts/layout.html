@@ -38,6 +38,7 @@
         <a class="brand" href="/">{{ site.title }}</a>
         <ul class="nav">
           <li><a href="/about.html">About</a></li>
+          <li><a href="/bookshelf.html">Bookshelf</a></li>
           {% for cat in site.categories %}
             <li><a href="/category/{{ cat[0] }}">{{ cat[0] }}</a></li>
           {% endfor %}
@@ -83,7 +84,6 @@
     </section>
   </div>
   {% include analytics.html %}
-  {% include gauges.html %}
 </body>
 
 </html>
