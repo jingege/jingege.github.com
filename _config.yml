@@ -3,7 +3,7 @@ pygments: true
 safe: false
 permalink: /posts/:year/:month/:title
 paginate: 10
-auto: true
+#auto: true
 rdiscount:
   extensions: [smart]
 title: Bill的私房钱

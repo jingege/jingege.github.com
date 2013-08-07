@@ -27,6 +27,30 @@ UP主题只有Twitter的分享按钮，我用JiaThis的分享服务给替换掉�
 ####Commenting
 绝大多数类似Pages的静态网页服务，其评论功能都使用了[Disqus](http://disqus.com/)的Commenting服务，不过某日在微博看到新秀[`moot`](http://moot.it)之后，便决定拿moot替换掉Disqus。moot的slogan是`Forums and commenting re-imagined`，听起来煞是令人耳目一新，实际注册了用来，也确实是比较大的创新，其Path风格的api设计得很精巧。但其门槛很低，看一遍文档我就把moot装备上了。最难的地方应该是要用插件把post的file name取出来，作为comment的path的key部分，这让我学会了写Jekyll插件。
 
+####Code highlight
+作为技术博客，代码高亮肯定是必不可少的了，个人认为使用gist会很好，但最终还是选择内置的[`Pygments`](http://pygments.org/)支持。
+
+首先是安装：
+
+{% highlight bash %}
+$ pip install Pygments
+{% endhighlight %}
+
+其次要创建相关css文件，这个新手往往会忽略：
+
+{% highlight bash %}
+$ cd path/to/jekyll/project/folder
+$ pygmentize -S default -f html > css/pygments.css
+{% endhighlight %}
+
+最后只要把css文件引入，用liquid嵌入代码即可：
+
+<code>
+&#123;% highlight java %}
+code goes here~
+&#123;% endhighlight %}
+</code>
+
 ####Category & Tag
 这是博客必不可少的功能了，但Jekyll只能通过插件来实现，我不懂Ruby，所以只能fork去了。参照[realjenius](http://realjenius.com/2012/12/01/jekyll-category-tag-paging-feeds/)的代码，把category和tag页面生成。但比较麻烦的是修改UP的主题，把category和tag链接加进来，整个过程就是在写Liquid模板，很简单。
 
