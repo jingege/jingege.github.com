@@ -3273,7 +3273,7 @@ table th[class*="span"],
 }
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif,Verdana,sans-serif,"宋体";
 }
 body {
   padding-top: 50px;

@@ -12,21 +12,21 @@ Coding了多年Java，自然早就听说过四种引用类型，不过偶尔也�
 
 ####Java的四种引用类型####
 
-*StrongReference*
+* StrongReference
 
-强引用。最常见的引用类型，用赋值号，即“=”来创建。GC不会回收强引用，即使内存不足，也是宁可抛OOM先。
+>强引用。最常见的引用类型，用赋值号，即“=”来创建。GC不会回收强引用，即使内存不足，也是宁可抛OOM先。
 
-*SoftReference*
+* SoftReference
 
-软引用。关键看内存，在内存不足时，GC会把软引用的对象回收掉。适用于对内存敏感的缓存。
+>软引用。关键看内存，在内存不足时，GC会把软引用的对象回收掉。适用于对内存敏感的缓存。
 
-*WeakReference*
+* WeakReference
 
-弱引用。和软引用的区别是，无论内存充足与否，GC扫描到弱引用所引用的对象不再具有强引用时，会将其回收。
+>弱引用。和软引用的区别是，无论内存充足与否，GC扫描到弱引用所引用的对象不再具有强引用时，会将其回收。
 
-*PhantomReference*
+* PhantomReference
 
-虚引用，也称幽灵引用。其get()方法固定return null，看起来似乎没有什么大的用处，但在某些场景下结合ReferenceQueue，可以有意想不到的效果。
+>虚引用，也称幽灵引用。其get()方法固定return null，看起来似乎没有什么大的用处，但在某些场景下结合ReferenceQueue，可以有意想不到的效果。
 
 ####ReferenceQueue####
 站在coder的角度看，ReferenceQueue似乎更“有用”一些。其作用是追踪被gc的Reference对象，更多的是做一些统计或清理的工作。
