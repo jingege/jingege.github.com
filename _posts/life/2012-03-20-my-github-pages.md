@@ -43,6 +43,14 @@ $ cd path/to/jekyll/project/folder
 $ pygmentize -S default -f html > css/pygments.css
 {% endhighlight %}
 
+其中default是指样式名，可以用如下方式查看有哪些样式：
+
+{% highlight python %}
+>>> from pygments.styles import STYLE_MAP
+>>> STYLE_MAP.keys()
+['monokai', 'manni', 'rrt', 'perldoc', 'borland', 'colorful', 'default', 'murphy', 'vs', 'trac', 'tango', 'fruity', 'autumn', 'bw', 'emacs', 'vim', 'pastie', 'friendly', 'native']
+{% endhighlight %}
+
 最后只要把css文件引入，用liquid嵌入代码即可：
 
 <code>
