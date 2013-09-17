@@ -11,7 +11,7 @@ summary: 总结一下堆外内存泄露的常见场景
 
 去年在一次QA对我们的一台长连接服务器进行压测后，暴露了一个Java内存泄露问题，结合jconsole、jmap等一系列工具分析和代码review，最后发现是一个存放断开的Socket连接的容器，没有合适的清理释放逻辑。这是在java heap上发生的泄露，如果发生了non-heap上的内存泄露，一般会祭上`google-perftools`来分析。但不像堆上的泄露原因各种各样，non-heap的泄露原因比较常见的只有几种，因为日常开发中很少有机会操作non-heap内存。
 
-这里总结一下java的non-heap内存泄露原因。
+这里总结一下java的non-heap内存泄露原因。其实说白了也就是介绍下日常开发中，哪里有可能接触到non-heap，哪些东西是放到non-heap上的。
 
 ####JNI
 
@@ -39,7 +39,7 @@ font.deriveFont(Font.PLAIN, i)
 
 ####Inflater&Deflater
 
-这个可能比较常见一些，在此就不多做解释了。
+Java的zip包里两个重要类，记住一定要保证`end()`能被调用。这个可能比较常见一些，在此就不多做解释了。
 
 {% highlight java %}
 Inflater inflater = null;
