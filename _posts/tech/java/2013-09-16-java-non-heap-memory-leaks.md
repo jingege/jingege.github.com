@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2013-09-16 19:03:02
-title: Java堆外内存泄露原因简析
+title: Java堆外内存泄露场景总结
 categories: [programming]
 tags:
 - java
