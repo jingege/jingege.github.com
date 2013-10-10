@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2013-08-26 19:15:00
-title: '[译文]Clojure Libs and Namespaces: require, use, import, and ns'
+date: 2013-10-03 19:15:00
+title: '[翻译]Clojure Libs and Namespaces: require, use, import, and ns'
 categories: [programming]
 tags: 
 - clojure
@@ -11,7 +11,7 @@ summary: 翻译了一篇关于clojure编程中的库和命名空间的文章
 
 原文：http://blog.8thlight.com/colin-jones/2010/12/05/clojure-libs-and-namespaces-require-use-import-and-ns.html
 
->当我给一个clojure新手展示如何引用其他命名空间的代码的时候，我自己都觉得有点复杂和疑惑。
+>每当我给一个clojure新手讲解如何引用其他命名空间时，我自己都觉得这有点复杂和困惑。
 
 现在我不会再花时间吐槽当前的namespaces设计了（参阅[this Clojure mailing list discussion](http://groups.google.com/group/clojure-dev/browse_thread/thread/46559fd9eb127bdd) and [the design discussion around namespaces in the Clojure Confluence](http://dev.clojure.org/display/design/Loading,+Compiling,+and+Namespaces)），但我觉得这里概括下Clojure lib的各种调用方式还是挺有用的。
 
