@@ -1,0 +1,64 @@
+## Services
+google_analytics:
+duoshuo:
+
+## Meta
+rss: /atom.xml
+favicon: /favicon.png
+icon: /favicon.png
+source_url:
+license:
+  name: 'CC BY-NC-SA 3.0'
+  url: 'http://creativecommons.org/licenses/by-nc-sa/3.0/cn'
+
+## Menus
+menus:
+  'Home': /
+
+right_menus:
+  'RSS': /atom.xml
+  'fork on Github':
+    target: '_blank'
+    href: 'http://github.com/jingege'
+
+## Banners && Widgets
+banners:
+  jade: |
+    a(href='http://jingege.me') 大家好！
+
+widgets:
+  -
+    markdown: |
+      Simple Block 是一个基于线框设计的简单的 Hexo 主题，拆分自 [精子的博客](https://jysperm.me)。
+      支持使用 Jade 或 Markdown 来向边栏添加小部件，或向正文前添加横幅。
+
+      技术栈：
+
+      * Jade - 页面模板
+      * Less/Sass - 页面样式
+      * Bower - 前端包管理器
+      * CoffeeScript - Hexo 拓展脚本
+      * Gulp - 编译工具
+
+  -
+    tags: true
+
+  -
+    archives: true
+
+  -
+    copyright: true
+
+## SNS (Work in progress)
+sns:
+  qq: '232772720'
+  qun: ''
+  v2ex: ''
+  mobile: ''
+  github: 'jingege'
+  keybase: ''
+  zhihu: ''
+  google_plus: ''
+  segmentfault: 'jysperm'
+  twitter: 'jysperm'
+  bitcoin: '13v2BTCMZMHg5v87susgg86HFZqXERuwUd'
