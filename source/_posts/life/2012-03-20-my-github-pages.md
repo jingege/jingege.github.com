@@ -32,29 +32,24 @@ UP主题只有Twitter的分享按钮，我用JiaThis的分享服务给替换掉�
 
 首先是安装：
 
-```shell anzhuang
+```bash
 $ pip install Pygments
 ```
 
-{% codeblock Time to be Awesome - awesome.rb %}
-puts "Awesome!" unless lame
-{% endcodeblock %}
-
-
 其次要创建相关css文件，这个新手往往会忽略：
 
-{% codeblock [lang:bash] [Shell] [#] [link text] %}
+```bash
 $ cd path/to/jekyll/project/folder
 $ pygmentize -S default -f html > css/pygments.css
-{% endcodeblock %}
+```
 
 其中default是指样式名，可以用如下方式查看有哪些样式：
 
-{% codeblock [lang:bash] [Shell] [#] [link text] %}
+```python 查看样式
 >>> from pygments.styles import STYLE_MAP
 >>> STYLE_MAP.keys()
 ['monokai', 'manni', 'rrt', 'perldoc', 'borland', 'colorful', 'default', 'murphy', 'vs', 'trac', 'tango', 'fruity', 'autumn', 'bw', 'emacs', 'vim', 'pastie', 'friendly', 'native']
-{% endcodeblock %}
+```
 
 最后只要把css文件引入，用liquid嵌入代码即可：
 
