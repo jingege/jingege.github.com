@@ -1,19 +1,22 @@
 ## Services
 google_analytics:
-duoshuo:
+duoshuo: 'jingege'
 
 ## Meta
 rss: /atom.xml
-favicon: /favicon.png
-icon: /favicon.png
-source_url:
+favicon: /favicon.ico
+icon: /favicon.ico
+source_url: https://github.com/jingege/jingege.github.com/tree/source/source/
 license:
   name: 'CC BY-NC-SA 3.0'
   url: 'http://creativecommons.org/licenses/by-nc-sa/3.0/cn'
 
 ## Menus
 menus:
-  'Home': /
+  '首页': /
+  '关于我': /about
+  '书单': /booklist
+  '小抄': /cheatsheet
 
 right_menus:
   'RSS': /atom.xml
@@ -24,21 +27,21 @@ right_menus:
 ## Banners && Widgets
 banners:
   jade: |
-    a(href='http://jingege.me') 大家好！
+    
+    | 小站重新装修，欢迎到访。
 
 widgets:
   -
     markdown: |
-      Simple Block 是一个基于线框设计的简单的 Hexo 主题，拆分自 [精子的博客](https://jysperm.me)。
-      支持使用 Jade 或 Markdown 来向边栏添加小部件，或向正文前添加横幅。
+      博主是一个不是很聪明的码农。完美主义者，强迫症中期。这里会记录一些回忆和点滴。
 
-      技术栈：
+      武器库：
 
-      * Jade - 页面模板
-      * Less/Sass - 页面样式
-      * Bower - 前端包管理器
-      * CoffeeScript - Hexo 拓展脚本
-      * Gulp - 编译工具
+      * [MacBook Pro](http://www.apple.com/cn/macbook-pro/)
+      * [Intellij IDEA](https://www.jetbrains.com/idea/)
+      * [iTerm2](https://www.iterm2.com/)
+      * [红杏](http://honx.in/_U9DPy38mTieZk3On)
+      * [Java](https://www.oracle.com/java/)/[Scala](http://scala-lang.org/)
 
   -
     tags: true
@@ -62,3 +65,10 @@ sns:
   segmentfault: 'jysperm'
   twitter: 'jysperm'
   bitcoin: '13v2BTCMZMHg5v87susgg86HFZqXERuwUd'
+
+
+ # Theme version
+version: 0.4.4
+
+# Highlight theme
+highlight_theme: jgg
