@@ -2,11 +2,9 @@
 layout: post
 date: 2013-09-25 21:32:16
 title: Only support xterm terminal
-categories: [programming]
+categories: [技术]
 tags:
-- linux
-published: true
-summary: 遇到一个ssh登陆的问题
+	- Linux
 ---
 
 前几天用我的Mac版iTerm2登陆服务器时terminal报出错误：

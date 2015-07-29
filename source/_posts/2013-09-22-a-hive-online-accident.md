@@ -2,10 +2,8 @@
 layout: post
 date: 2013-09-22 20:10:15
 title: 记一次Hive线上问题的排查
-categories: [bigdata]
-tags: [hive]
-published: true
-summary: 线上Hive任务出了问题，排查了下事故原因
+categories: [技术]
+tags: [Hive]
 ---
 
 前几天监控到一个Hive Job CPU偏高，而且长时间无法停止，我最初怀疑是死循环，于是着手排查了下问题，不算太曲折。虽然已经过去多日，细节都快忘了，不过幸亏chrome的history里保留了一些痕迹，让我能把这件事分享出来。

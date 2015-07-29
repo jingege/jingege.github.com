@@ -2,12 +2,10 @@
 layout: post
 date: 2013-10-15 21:47:16
 title: ketama的一个重要bug
-categories: [programming]
+categories: [技术]
 tags:
-- java
-- hash
-published: true
-summary: 再次去读ketama的源码，居然发现一个bug
+	- Java
+	- Hash
 ---
 ketama是什么？
 

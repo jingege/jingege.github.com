@@ -2,10 +2,8 @@
 layout: post
 date: 2013-08-28 12:03:40
 title: 对user.dir的误解
-categories: [programming]
-tags: [java]
-published: true
-summary: 澄清了一直以来对于user.dir的误解
+categories: [技术]
+tags: [Java]
 ---
 
 今天调试程序的时候，发现我之前hard code的一段路径修改成了`System.getProperty("user.dir")`之后，依然可以正常运行。我一直以来都以为user.dir就是当前用户的home dir，似乎这个印象应该自大学时代就已经有了，所以我有些先入为主地认为是环境有问题。

@@ -2,13 +2,11 @@
 layout: post
 date: 2013-09-05 22:05:40
 title: "[开源]yaderde框架"
-categories: [programming]
+categories: [技术]
 tags:
-- java
-- opensource
-- yaserde
-published: true
-summary: 开源了一个自娱自乐的序列化/反序列化框架
+	- Java
+	- 开源
+	- Yaserde
 ---
 
 项目地址：[https://github.com/jingege/yaserde](https://github.com/jingege/yaserde)

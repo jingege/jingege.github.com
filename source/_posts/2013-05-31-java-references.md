@@ -2,10 +2,8 @@
 layout: post
 date: 2013-05-31 14:43:40
 title: 简析Java Reference
-categories: [programming]
-tags: [java]
-published: true
-summary: 抽时间仔细看了下Java Reference相关的源代码，简单记一笔
+categories: [技术]
+tags: [Java]
 ---
 
 Coding了多年Java，自然早就听说过四种引用类型，不过偶尔也才浅浅的用一下，今天突然想看看这块的内部实现，读了读jdk源码，这篇文章就当做个笔记。先简单介绍下四种引用类型：

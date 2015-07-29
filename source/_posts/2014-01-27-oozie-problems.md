@@ -2,12 +2,10 @@
 layout: post
 date: 2014-01-27 19:10:25
 title: oozie的使用总结
-categories: [bigdata]
+categories: [技术]
 tags: 
-- oozie
-- hive
-published: true
-summary: 最近在做oozie相关的工作，遇到一些问题，在此做个小结
+    - Oozie
+    - Hive
 ---
 
 本篇不是oozie的教程，官网的文档虽然比较粗糙，但已经非常全面，可直接参考，下文总结下oozie使用中遇到的一些问题（持续更新中）。

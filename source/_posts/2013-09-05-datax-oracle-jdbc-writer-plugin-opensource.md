@@ -2,13 +2,11 @@
 layout: post
 date: 2013-09-05 23:15:30
 title: "[开源]DataX的oracle JDBC writer插件"
-categories: [programming]
+categories: [技术]
 tags:
-- java
-- opensource
-- datax
-published: true
-summary: 开源了一个为淘宝datax提供的oracle jdbc writer插件
+	- Java
+	- 开源
+	- DataX
 ---
 
 项目地址：[https://github.com/jingege/datax-oraclejdbcwriter](https://github.com/jingege/datax-oraclejdbcwriter)

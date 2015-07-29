@@ -2,11 +2,9 @@
 layout: post
 date: 2013-08-09 14:51:25
 title: 中国式开源的三宗罪
-categories: [life]
+categories: [生活]
 tags:
-- opensource
-published: true
-summary: 纯吐槽之我看中国式开源
+	- 开源
 ---
 
 >“月亮还是外国的圆”
