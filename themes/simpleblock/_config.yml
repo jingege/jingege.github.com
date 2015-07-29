@@ -68,7 +68,7 @@ sns:
 
 
  # Theme version
-version: 0.4.4
+version: 0.4.5
 
 # Highlight theme
 highlight_theme: jgg
