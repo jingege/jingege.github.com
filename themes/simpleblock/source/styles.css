@@ -727,7 +727,7 @@ body {
 	border-bottom: 1px solid #eee;
 }
 
-.page-header h1 {
+.page-header h1 {/**tag**/
 	padding-left: 15px;
 	font-size: 36px;
 }
