@@ -54,6 +54,9 @@ tag_map:
   信息安全: information-security
   软件工程: software-engineering
   PHP: php
+  MQ: mq
+  Jumper: jumper
+  Btrace: btrace
   C++: cpp
   Hexo: hexo
   开源: opensource
@@ -77,6 +80,7 @@ tag_map:
   计划: plans
   技术: technology
   计算机网络: network
+  备忘: memorandum
   互联网: internet
   笔记: reading-notes
   价值观: values

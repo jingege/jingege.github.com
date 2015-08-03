@@ -1,3 +1,5 @@
+---
+layout: post
 title: 迁移到hexo，重新开张
 date: 2015-07-29 20:21:53
 tags: [Hexo, 生活]
