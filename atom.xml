@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[晋哥哥的私房钱]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://jingege.me/"/>
+  <updated>2015-12-10T17:10:55.000Z</updated>
+  <id>http://jingege.me/</id>
+  
+  <author>
+    <name><![CDATA[Bill Zhang]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[别了，我店]]></title>
+    <link href="http://jingege.me/2015/12/10/leave-yhd/"/>
+    <id>http://jingege.me/2015/12/10/leave-yhd/</id>
+    <published>2015-12-09T16:39:04.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>我不是一个喜欢变化的人，但作为一个还算有点追求的技术人，终究要面对的就是变化，转眼离职我店已经三个月了，一直想着在此处稍作总结，没成想也是一拖再拖。</p>
+<p>今天不展望未来，只简单回顾下在我店两年多的学习和生活。我12年底拿到我店offer，13年初最终决定离开猪厂，成为了一名所谓的基础架构师。首先感谢一面面试官吴总，问的题目都很适合我，也比较庆幸后面面试我的CJ、HL都比较nice。</p>
+<p>入职我店后在大数据团队先混了阵子，和SL一起给Hadoop生态主要成员做了件外皮，后来转到同是架构组的老江手下做消息队列相关研发，终于多年以来对于大并发场景的憧憬成为了现实，激动无比。在SOA团队度过了职业生涯至今最充实的时光，所以其实与其说怀念我店，倒不如说更怀念我们的SOA团队来得准确。</p>
+<p>先简单记录下下面几位吧。</p>
+<h4 id="u8001_u6C5F"><a href="#u8001_u6C5F" class="headerlink" title="老江"></a>老江</h4><p>80后老码农，资历深，功力更深，SOA团队的导师，伟大的精神领袖，难得的好领导，不鼓励加班，LOL水平一般的重度玩家。常见其手捧英文原版或者打印的英文论文死啃，这其实也是我们工作的一部分内容，不过我是没那个毅力啃完一本大部头的。</p>
+<ul>
+<li>代表作： hedwig</li>
+<li>经典台词： 都别装了，下班了</li>
+</ul>
+<h4 id="u8001_u8463"><a href="#u8001_u8463" class="headerlink" title="老董"></a>老董</h4><p>此人在杭州有套140方，至于其他城市的房子，我就不多说了。另外其和老江一样，生生抛弃了屙粒粑粑几千股，命运就此转折。</p>
+<ul>
+<li>代表作： detector</li>
+<li>经典台词： 昨天去听了场炒股讲座，不错</li>
+</ul>
+<h4 id="u5E38_u59D4"><a href="#u5E38_u59D4" class="headerlink" title="常委"></a>常委</h4><p>码字是副业，其实是一家公司的二股东，小老板，团队里理论上最富有的人。时政野史的首席发言人，翻大墙师（此处请读者自行调整文字顺序），阿波罗重度用户，故得常委一名。</p>
+<ul>
+<li>代表作： detector、kira</li>
+<li>经典台词： 我不喜欢吃肉</li>
+</ul>
+<h4 id="u957F_u575A"><a href="#u957F_u575A" class="headerlink" title="长坚"></a>长坚</h4><p>新上海人，股神，一年只出手若干次，屡次看清大势成功抄底或逃顶，收割起散户无所不用其极，习惯将变量命名为一整句话。</p>
+<ul>
+<li>代表作： kira</li>
+<li>经典台词： 咱们今天吃龙门客栈吧（众人摇头）</li>
+</ul>
+<h4 id="u8363_u65B0"><a href="#u8363_u65B0" class="headerlink" title="荣新"></a>荣新</h4><p>准拆迁富，典型的狗屎运者，刚在闸北买了套又小又旧的拆迁房，就被并入静安区了，最近听说又要拆迁（天理何在？！）。</p>
+<ul>
+<li>代表作： transfer</li>
+<li>经典台词： @&amp;#￥)(@#@! （语速太快，总是听不清）</li>
+</ul>
+<h4 id="u6D77_u9752"><a href="#u6D77_u9752" class="headerlink" title="海青"></a>海青</h4><p>我见过的唯一的新款MacBook用户，因其极其擅长分析各种线上问题，人送外号人肉detector。</p>
+<ul>
+<li>代表作： zone-switcher</li>
+<li>经典台词： 不详</li>
+</ul>
+<h4 id="u4F73_u5A01"><a href="#u4F73_u5A01" class="headerlink" title="佳威"></a>佳威</h4><p>上海土著，旅法学者，CTO校友，似乎是我整个职业生涯中面试过的人里唯一一位成功入职了的。</p>
+<ul>
+<li>代表作： 不详</li>
+<li>经典台词： 我现在公司的架构low爆了</li>
+</ul>
+<p>这几年整个行业的人员流动都很快，这几位是共事比较久的，多事之秋，其中有四位已经另谋出路。其他的如老虎、智红等先不多说。</p>
+<p>其他的也随便记录下。</p>
+<h4 id="u610F_u672A"><a href="#u610F_u672A" class="headerlink" title="意未"></a>意未</h4><p>公司附近的一家餐厅，想来老板应该是旁边艺术学院的老师，装修机具艺术风格，最有意思的是每天只做一套餐，有兴趣的加微信公众号<code>Artaste_yiwei</code>，可进一步了解其逼格。</p>
+<h4 id="u5468_u4F1A"><a href="#u5468_u4F1A" class="headerlink" title="周会"></a>周会</h4><p>周五下午会议室或者必胜客，更新下进度、扯扯淡、吹吹牛、喝喝下午茶。后来加入了一个分享环节，唯一的要求就是分享内容尽量不要与工作内容相关。后来股神一直介绍炒股知识，老江的分享逼格更高，不过我只记得有教怎么看手相，常委主打历史牌，最经典的是详细介绍了古代皇帝的三宫六院建制，我分享过易信的架构以及装修必然被坑的历史教训。</p>
+<p>在我店的工作算是比较舒心惬意的，虽然有过几次在高铁上或高速上接到SA电话的黑历史，至于生活，我想，在这个行业，能谈得上有生活，已然算得上不错了。我至今丝毫不避讳对我店的怀念，但人终究是生活在现实中。想记住的太多，反而不知道应该从哪里继续，这里暂时停笔，有缘再补。</p>
+<p>合影附上。</p>
+<p><img src="/images/yhd_workmates.png" alt="1号店的伙计们！"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>我不是一个喜欢变化的人，但作为一个还算有点追求的技术人，终究要面对的就是变化，转眼离职我店已经三个月了，一直想着在此处稍作总结，没成想也是一拖再拖。</p>
+<p>今天不展望未来，只简单回顾下在我店两年多的学习和生活。我12年底拿到我店offer，13年初最终决定离开猪厂，]]>
+    </summary>
+    
+      <category term="生活" scheme="http://jingege.me/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[[备忘]记一次使用Btrace排查线上问题]]></title>
+    <link href="http://jingege.me/2015/08/02/a-btrace-case/"/>
+    <id>http://jingege.me/2015/08/02/a-btrace-case/</id>
+    <published>2015-08-02T03:01:13.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>本文仅供博主备忘。</p>
+<h4 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h4><p>我目前负责我司的分布式消息队列产品，某日，有业务方上报可能发生少量数据丢失，事态紧急，赶紧排查！</p>
+<h4 id="u9A8C_u8BC1_u95EE_u9898"><a href="#u9A8C_u8BC1_u95EE_u9898" class="headerlink" title="验证问题"></a>验证问题</h4><p>观察监控曲线，发现15分钟动态监控报表的生产和消费确实有数量上的差异，丢失的不算少。这里要说明一下，一般来说如果生产消费是持续不断的，是很难通过此类报表判断出数据丢失，因为消费是有延迟的，统计会在时间维度上产生错位，幸运的是此业务方的消息是定时发送的，大概是一两分钟一批，消费速度也很快，所以统计曲线看起来就像是一条条抛物线，丢不丢一算便知。</p>
+<h4 id="u68C0_u67E5_u5404_u8BA1_u6570_u5668_u548Clog"><a href="#u68C0_u67E5_u5404_u8BA1_u6570_u5668_u548Clog" class="headerlink" title="检查各计数器和log"></a>检查各计数器和log</h4><p>相关计数器正常，log也未发现任何疑点。</p>
+<h4 id="u601D_u8003"><a href="#u601D_u8003" class="headerlink" title="思考"></a>思考</h4><p>服务正常，但消息确实有少量丢失，而且受影响的topic似乎也极少，这个仅从表面看想必是很难看出原因了。考虑到消息的消费先是由<code>LeaderServer</code>分配ID段的，所以我决定祭上神器<code>Btrace</code>，线上抓取分配的ID和ACK表对比，力求找出蛛丝马迹。</p>
+<h4 id="u52A8_u624B"><a href="#u52A8_u624B" class="headerlink" title="动手"></a>动手</h4><p>脚本如下。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@BTrace</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GetMessageIDGreaterThan</span> </span>&#123;</span><br><span class="line">	<span class="annotation">@OnMethod</span>(clazz = <span class="string">"com.yihaodian.architecture.jumper.common.inner.dao.impl.mongodb.MessageDAOImpl"</span>, method = <span class="string">"getMessageIDGreaterThan"</span>, location = <span class="annotation">@Location</span>(Kind.RETURN))  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">traceExecute</span><span class="params">(@ProbeClassName String name,@ProbeMethodName String method,String topicName, Long messageId,<span class="keyword">int</span> size, <span class="keyword">int</span> index,@Return Long ret)</span></span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(BTraceUtils.compare(topicName,<span class="string">"dmp_user_creative_product"</span>))&#123;</span><br><span class="line">        	BTraceUtils.print(strcat(<span class="string">"params"</span>,<span class="string">"=&gt;"</span>));</span><br><span class="line">        	BTraceUtils.print(strcat(topicName,<span class="string">","</span>));</span><br><span class="line">        	BTraceUtils.print(strcat(str(messageId),<span class="string">","</span>));</span><br><span class="line">        	BTraceUtils.print(strcat(str(size),<span class="string">","</span>));</span><br><span class="line">        	BTraceUtils.print(strcat(str(index),<span class="string">","</span>));</span><br><span class="line">        	BTraceUtils.println(strcat(<span class="string">"result=&gt;"</span>, str(ret)));</span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，<code>messageId</code>是已经分配的最大ID，返回值<code>ret</code>是此次分配的最大ID。理论上，一系列输出应该是连续的。也即上一行的<code>ret</code>和此行的<code>messageId</code>是一致的。事实确实如此。</p>
+<p>继续比对ACK表。解析一系列输出，写了个脚本输出了一堆mongo的查询语句，目的是查出哪些段的ID丢失了ack。经对比，一个奇怪的现象出现了，所有长度为264的ID段都丢失了。经检查，此数值乃JVM启动参数之一，即<code>-Dglobal.block.queue.fetchsize</code>，用来配置ConsumerServer批量获取消息的大小。为何这么巧合，丢失的都是长度为264的ID段呢？</p>
+<p>表面淡定内心纠结地查了一通，发现了疑点，不是每台机器的<code>-Dglobal.block.queue.fetchsize</code>都一致，但最大的是就是264。这个比较意外，但想了想应该也不会出啥大问题啊。</p>
+<p>更加糊涂了。</p>
+<p>翻查代码，终于查找到元凶。如下，</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (messageIDList != <span class="keyword">null</span> &amp;&amp; messageIDList.size() &lt;= fetchSize) &#123;</span><br><span class="line">    <span class="comment">//logic goes here</span></span><br><span class="line">    <span class="keyword">return</span> messageIDList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">int</span> fetchSize = Integer.parseInt(System.getProperty(<span class="string">"global.block.queue.fetchsize"</span>, <span class="string">"200"</span>));</span><br></pre></td></tr></table></figure>
+<p>问题找出来了，<code>LeaderServer</code>的配置是264，所以<code>ConsumerServer</code>拿到的ID段长度也是264，但本机的fetchSize比264要小，所以被直接忽略了。</p>
+<p>那么问题是怎么产生的呢？导致问题的代码看似多余，其实也是一种自我保护。所以问题还是要归咎于配置不一致，引起逻辑上的混乱。那么为什么配置会不一致呢，原来前阵子SA为了方便使用<code>puppet</code>部署，将各种配置都参数化了，效果就是代码部署时，通过对硬件的计算，修改各种参数取值，这样就降低了运维的复杂度。虽然申请了一批硬件配置相同的机器，但是其“软配置”却各不相同，导致有些关键参数未能完全一致，而我又未能察觉隐患，故导致此问题。马上修改配置，重启，解决。</p>
+<h4 id="u53CD_u601D"><a href="#u53CD_u601D" class="headerlink" title="反思"></a>反思</h4><p>吃一堑长一智，这件事情的教训就是，类似问题很难保证完全避免，但在研发阶段就要多思考会导致问题的场景，及时写注释或记录到文档里。毕竟代码逻辑久了谁都会忘，但注释放那就会时刻提醒你不要犯错。当初如果在脚本的相关参数上备注：必须保证每台机器的此配置取值一致，问题也就不会发生了。</p>
+<p>另外一点就是Btrace确实是排查问题之神器，让人无路之时转而柳暗花明。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本文仅供博主备忘。</p>
+<h4 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h4><p>我目前负责我司的分布式消息队列产品，某日，有业务方上报可能发生少量数据]]>
+    </summary>
+    
+      <category term="Btrace" scheme="http://jingege.me/tags/btrace/"/>
+    
+      <category term="Jumper" scheme="http://jingege.me/tags/jumper/"/>
+    
+      <category term="MQ" scheme="http://jingege.me/tags/mq/"/>
+    
+      <category term="备忘" scheme="http://jingege.me/tags/memorandum/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[迁移到hexo，重新开张]]></title>
+    <link href="http://jingege.me/2015/07/29/move-to-hexo/"/>
+    <id>http://jingege.me/2015/07/29/move-to-hexo/</id>
+    <published>2015-07-29T12:21:53.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>过而改之，善莫大焉。</p>
+<p>不过，这一年多也不是懒，家事、公事事事操心。如今这博客重新装修下继续营业。后面我会逐渐把这遗失的一段时光写出来，谁让我记性太差。</p>
+<p>为了此次重新开张，我换了工具和主题，放弃了jekyll转而启用hexo，主要是因为这个主题我比较喜欢。不过hexo自定义起来绝不轻松，折腾了好久。</p>
+<p>还有一个不是理由的理由，之前被美帝子民抢注的<code>jingege.me</code>，终于又回到了我手里！</p>
+<p>无论如何，欢迎回来。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>过而改之，善莫大焉。</p>
+<p>不过，这一年多也不是懒，家事、公事事事操心。如今这博客重新装修下继续营业。后面我会逐渐把这遗失的一段时光写出来，谁让我记性太差。</p>
+<p>为了此次重新开张，我换了工具和主题，放弃了jekyll转而启用hexo，主要是因为这个主题我比]]>
+    </summary>
+    
+      <category term="Hexo" scheme="http://jingege.me/tags/hexo/"/>
+    
+      <category term="生活" scheme="http://jingege.me/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[oozie的使用总结]]></title>
+    <link href="http://jingege.me/2014/01/27/oozie-problems/"/>
+    <id>http://jingege.me/2014/01/27/oozie-problems/</id>
+    <published>2014-01-27T11:10:25.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>本篇不是oozie的教程，官网的文档虽然比较粗糙，但已经非常全面，可直接参考，下文总结下oozie使用中遇到的一些问题（持续更新中）。</p>
+<p>oozie版本：3.3.2</p>
+<p>###时区问题</p>
+<p>oozie默认使用UTC时区，而服务器上可能是CST，建议统一使用GMT+0800。</p>
+<ul>
+<li>不要修改oozie-default.xml，无效。在oozie-site.xml中添加：</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">name</span>&gt;</span>oozie.processing.timezone<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">value</span>&gt;</span>GMT+0800<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>可以用<code>oozie info --timezones</code>来查看支持的时区</li>
+<li>使用GMT+0800后，时间不可以再使用形如<code>2014-01-24T13:40Z</code>的格式，要使用对应的形如<code>2014-01-24T13:40+0800</code>的格式</li>
+<li>还有一点比较重要，即oozie web console的TimeZone设置要和上述一致，否则你在web console中看到的时间在感官上都是不正确的</li>
+</ul>
+<p>###Hive相关<br>oozie会启动一个MR job来启动hive client，需要在你的oozie app里自行指定hive的配置，以及提供相关lib，因为不确定是哪一台节点，所以需要给每一台计算节点都分配hive metastore的权限。</p>
+<h4 id="hive-site-xml"><a href="#hive-site-xml" class="headerlink" title="hive-site.xml"></a>hive-site.xml</h4><ul>
+<li><p>使用<job-xml>指定hive-site.xml位置，下例中对应位置为该oozie app所在的目录，也可以指定一个绝对的HDFS路径</job-xml></p>
+  <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">action</span> <span class="attribute">name</span>=<span class="value">"trackinfo"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">hive</span> <span class="attribute">xmlns</span>=<span class="value">"uri:oozie:hive-action:0.2"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">job-tracker</span>&gt;</span>$&#123;jobTracker&#125;<span class="tag">&lt;/<span class="title">job-tracker</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">name-node</span>&gt;</span>$&#123;nameNode&#125;<span class="tag">&lt;/<span class="title">name-node</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">job-xml</span>&gt;</span>hive-site.xml<span class="tag">&lt;/<span class="title">job-xml</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">name</span>&gt;</span>mapred.job.queue.name<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">value</span>&gt;</span>$&#123;queueName&#125;<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="css"><span class="tag">trackinfo</span><span class="class">.hql</span></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">param</span>&gt;</span>label=$&#123;wf:actionData('date')['lastday']&#125;<span class="tag">&lt;/<span class="title">param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">hive</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ok</span> <span class="attribute">to</span>=<span class="value">"end"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">error</span> <span class="attribute">to</span>=<span class="value">"fail"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">action</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>####hive的lib</p>
+<ul>
+<li>在job.properties中设置<code>oozie.use.system.libpath=true</code></li>
+<li>使用<code>oozie.libpath=/path/to/lib</code>指定lib路径</li>
+</ul>
+<p>####metastore</p>
+<ul>
+<li>切记要把metastore的相应jdbc驱动放到lib里</li>
+<li>别忘了给每个计算节点授权，否则连接不上metastore</li>
+</ul>
+<p>####hive action的错误如何分析？<br>hive action执行失败，怎么分析原因呢？在oozie的web console中，打开因出错被KILL的action节点，打开<code>Console URL</code>即可以看到对应的MR jobdetails页面，一般错误信息在Map的日志里，打开你就会发现，日志的内容涵盖了hive job的定义、hql以及控制台输出，足够分析错误原因了。</p>
+<p>###前一天<br>由于我司大多数job是计算前一天的数据，故需在调度时动态计算前一天的日期字符串，使用shell action结合 <capture-output>可以捕捉控制台输出，输出格式需为<code>A=B</code>，这样就可以使用<code>${wf:actionData(&#39;A&#39;)[&#39;B&#39;]}</code>提取所需的字符串了。</capture-output></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">action</span> <span class="attribute">name</span>=<span class="value">"date"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">shell</span> <span class="attribute">xmlns</span>=<span class="value">"uri:oozie:shell-action:0.1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">job-tracker</span>&gt;</span>$&#123;jobTracker&#125;<span class="tag">&lt;/<span class="title">job-tracker</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">name-node</span>&gt;</span>$&#123;nameNode&#125;<span class="tag">&lt;/<span class="title">name-node</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">exec</span>&gt;</span>$&#123;cmd&#125;<span class="tag">&lt;/<span class="title">exec</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">argument</span>&gt;</span>-d<span class="tag">&lt;/<span class="title">argument</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">argument</span>&gt;</span>1day ago<span class="tag">&lt;/<span class="title">argument</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">argument</span>&gt;</span>+lastday=%Y-%m-%d<span class="tag">&lt;/<span class="title">argument</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">capture-output</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">shell</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ok</span> <span class="attribute">to</span>=<span class="value">"nextStep"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">error</span> <span class="attribute">to</span>=<span class="value">"fail"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">action</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>其中cmd=/bin/date</p>
+<p>###权限<br>遇到HDFS相关的权限问题，请通过修改oozie app提交用户或修改HDFS文件权限的方式自行解决。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本篇不是oozie的教程，官网的文档虽然比较粗糙，但已经非常全面，可直接参考，下文总结下oozie使用中遇到的一些问题（持续更新中）。</p>
+<p>oozie版本：3.3.2</p>
+<p>###时区问题</p>
+<p>oozie默认使用UTC时区，而服务器上可能是CST]]>
+    </summary>
+    
+      <category term="Hive" scheme="http://jingege.me/tags/hive/"/>
+    
+      <category term="Oozie" scheme="http://jingege.me/tags/oozie/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Learn clojure in Y minutes]]></title>
+    <link href="http://jingege.me/2014/01/04/learn-clojure-in-y-minutes-translation/"/>
+    <id>http://jingege.me/2014/01/04/learn-clojure-in-y-minutes-translation/</id>
+    <published>2014-01-04T00:30:00.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>贡献了一篇译文。</p>
+<p>Learn X in Y minutes<br>where X=<a href="http://learnxinyminutes.com/docs/zh-cn/clojure-cn/" target="_blank" rel="external">clojure</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>贡献了一篇译文。</p>
+<p>Learn X in Y minutes<br>where X=<a href="http://learnxinyminutes.com/docs/zh-cn/clojure-cn/" target="_blank" rel="externa]]>
+    </summary>
+    
+      <category term="Clojure" scheme="http://jingege.me/tags/clojure/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ketama的一个重要bug]]></title>
+    <link href="http://jingege.me/2013/10/15/ketama-bug/"/>
+    <id>http://jingege.me/2013/10/15/ketama-bug/</id>
+    <published>2013-10-15T13:47:16.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>ketama是什么？</p>
+<blockquote>
+<p>C library for consistent hashing, and langauge bindings</p>
+</blockquote>
+<p>至于consistent hasing（一致性哈希），不了解的可以参考<a href="http://en.wikipedia.org/wiki/Consistent_hashing" target="_blank" rel="external">这里</a>。</p>
+<p>ketama是去年读<a href="http://www.last.fm/user/RJ/journal/2007/04/10/rz_libketama_-_a_consistent_hashing_algo_for_memcache_clients" target="_blank" rel="external">这篇文章</a>时看到的，应该是Richard Jones还在last.fm工作时写的，不过他现在已经离开了。今天莫名其妙地突然想起了它，所以特地又去搜了下，找到后顺便读了下源码。ketama最初是一个c库和一个PHP的封装，不过后来作者添加了多种其他语言的实现，还感慨Java集合类让实现简化了很多（实际上是用了SortedMap的API，我还读过一个常见的memcached java客户端，具体哪个忘了，也是用了SortedMap）。<a href="https://github.com/RJ/ketama" target="_blank" rel="external">源码</a>在github上可以看到。</p>
+<p>问题就出在Java实现上。当我看到源码里声明了全局的<code>java.security.MessageDigest</code>时，意识到这里可能有并发问题。起初我还不太相信，于是去google了一把，网上似乎是说<code>MessageDigest</code>不是线程安全的，但我最后还是自己写了个简单的多线程程序测试以求最终确认，最后终于向自己证实确实是RJ同学出了bug。然后果断fork然后fix，最后向作者提交了patch，坐等处理。</p>
+<p>我的patch很简单，将成员变量去掉，在函数中即时创建<code>MessageDigest</code>对象。为此我写了个简单的benchmark，发现<code>MessageDigest.getInstance(String)</code>方法在我的MBP MD313上一次调用耗时不足1ms，相对于网络开销来说基本可以忽略。</p>
+<p>最后我去看了下apache-commons-codec库的<code>org.apache.commons.codec.digest.DigestUtils</code>类，发现也是类似的做法，遂放心。</p>
+<p>类似的比较容易忽略的还有java.text.SimpleDateFormat,在编写Java类时，同学们一定要审慎对待每一个成员变量，以及其即将面临的运行环境。这其实很烦，这也是我喜欢FP的理由。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>ketama是什么？</p>
+<blockquote>
+<p>C library for consistent hashing, and langauge bindings</p>
+</blockquote>
+<p>至于consistent hasing（一致性哈希），不了]]>
+    </summary>
+    
+      <category term="Hash" scheme="http://jingege.me/tags/hash/"/>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[我的Emacs]]></title>
+    <link href="http://jingege.me/2013/10/10/my-emacs/"/>
+    <id>http://jingege.me/2013/10/10/my-emacs/</id>
+    <published>2013-10-10T13:07:52.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>初识emacs还是在大学时代，因为编程比赛获奖而有幸通过面试进入<a href="http://online.cumt.edu.cn" target="_blank" rel="external">学生在线</a>这个大家庭，从而和大炮、yada等同学相识，跟他们学了很多。据说当时技术部新进小同学的时候，要由一名老成员在不经意间秀一下emacs的操作，刺激一下，不过我实在记不起来何时起开始用emacs，似乎是当年和大炮一起用PHP写网站的时候看他用，然后被王垠那篇神作《Emacs是一种信仰！世界最强编辑器介绍》感动之后开始学习的吧。后来毕业后不久听说那帮新来的熊孩子居然把工作室的Linux服务器全部都装成WindowsServer了，真是败家败业！Linux都不用了，想必也没人再去学emacs了。再后来，听说yada因为左手需要空出来端咖啡竟也转而使用VI了，毕竟emacs的key-binding实在是太变态了。</p>
+<p>扯远了。</p>
+<p>其实我依然是一个emacs初级用户，现在基本只用emacs做两件事：</p>
+<ul>
+<li><p>写clojure</p>
+</li>
+<li><p>写markdown（即写博客）</p>
+</li>
+</ul>
+<p>早些时候我已经把我的Mac的一些配置都备份在github里了，<a href="https://github.com/jingege/myconfig/blob/master/emacs/mac/.emacs" target="_blank" rel="external">这里</a>是我emacs的配置，需要的可以参考下，包含如下配置：</p>
+<ul>
+<li>erlang mode</li>
+<li>clojure mode相关的一坨，包括nrepl</li>
+<li>自动补全</li>
+<li>显行号，用的是linum</li>
+<li>deep-blue主题，我最喜欢的emacs主题</li>
+<li>隐藏鸡肋一般存在的工具栏</li>
+<li>隐藏滚动条</li>
+<li>启动后自动最大化</li>
+<li>markdown mode，用来写博客</li>
+<li>yasnippet，神器</li>
+<li>rainbow delimiters，彩色括号，特别是对于clojure这种lisp方言，效果参考下图</li>
+<li>ido和lusty explorer，简化mini buffer里的命令输入</li>
+<li>显时间</li>
+<li>yes/no简化成y/n</li>
+<li>yaml mode</li>
+<li>window numbering，给每个buffer定义数字编号，再也不用C-x o了</li>
+<li>git-emacs，不太常用，我还是习惯terminal里用git</li>
+</ul>
+<p>后面几个配置如果你在github没看到的话，那是我还没push上去。</p>
+<p>最后附上我的emacs的真容。</p>
+<p><a href="/images/myemacs.png"><img src="/images/myemacs.png" alt="Emacs"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>初识emacs还是在大学时代，因为编程比赛获奖而有幸通过面试进入<a href="http://online.cumt.edu.cn" target="_blank" rel="external">学生在线</a>这个大家庭，从而和大炮、yada等同学相识，跟他们学了很多。]]>
+    </summary>
+    
+      <category term="Emacs" scheme="http://jingege.me/tags/emacs/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Only support xterm terminal]]></title>
+    <link href="http://jingege.me/2013/09/25/only-support-xterm-terminal/"/>
+    <id>http://jingege.me/2013/09/25/only-support-xterm-terminal/</id>
+    <published>2013-09-25T13:32:16.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>前几天用我的Mac版iTerm2登陆服务器时terminal报出错误：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: only support xterm terminal</span><br></pre></td></tr></table></figure>
+<p>我看网上有人建议使用<a href="http://baniu.me/2013/01/mac-ssh%E5%87%BA%E7%8E%B0error-only-support-xterm-terminal%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" target="_blank" rel="external">这个方案</a>，其实是没找到病根。根据错误提示，我们应该用xterm类型的terminal登陆，所以正确的方案有二：</p>
+<ul>
+<li><p>设置环境变量<code>export TERM=xterm</code></p>
+</li>
+<li><p>修改你的ssh客户端的profile，设置terminal type为xterm</p>
+</li>
+</ul>
+<p>上述方式在我的iTerm2和Terminal都通过。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前几天用我的Mac版iTerm2登陆服务器时terminal报出错误：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br>]]>
+    </summary>
+    
+      <category term="Linux" scheme="http://jingege.me/tags/linux/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[记一次Hive线上问题的排查]]></title>
+    <link href="http://jingege.me/2013/09/22/a-hive-online-accident/"/>
+    <id>http://jingege.me/2013/09/22/a-hive-online-accident/</id>
+    <published>2013-09-22T12:10:15.000Z</published>
+    <updated>2015-12-11T03:38:41.000Z</updated>
+    <content type="html"><![CDATA[<p>前几天监控到一个Hive Job CPU偏高，而且长时间无法停止，我最初怀疑是死循环，于是着手排查了下问题，不算太曲折。虽然已经过去多日，细节都快忘了，不过幸亏chrome的history里保留了一些痕迹，让我能把这件事分享出来。</p>
+<p>由于权限有限，只能从运行Hive Job的这台机器查起。首先是要查看下对应的java进程的运行状况，用jstack，失败，抛出如下异常：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sun<span class="class">.jvm</span><span class="class">.hotspot</span><span class="class">.debugger</span><span class="class">.DebuggerException</span>: sun<span class="class">.jvm</span><span class="class">.hotspot</span><span class="class">.debugger</span><span class="class">.DebuggerException</span>: get_thread_regs failed <span class="keyword">for</span> <span class="tag">a</span> lwp</span><br></pre></td></tr></table></figure>
+<p>首次见到，于是google之，得知是JDK6u23之前的一个bug（参考<a href="http://www.blogjava.net/hankchen/archive/2012/04/09/373640.html" target="_blank" rel="external">这里</a>），查看了下故障机的JDK版本，果然低了，奇怪的是只有这台比较低，先不管，升级到1.6.0_31。</p>
+<p>继续jstack，发现没有异常的锁等待。多次jstack查看，主线程都在这个方法里（代码行偶尔不同）：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">org</span><span class="class">.apache</span><span class="class">.hadoop</span><span class="class">.mapred</span><span class="class">.lib</span><span class="class">.CombineFileInputFormat</span><span class="class">.getMoreSplits</span>(<span class="tag">JobConf</span>, <span class="tag">Path</span><span class="attr_selector">[]</span>, <span class="tag">long</span>, <span class="tag">long</span>, <span class="tag">long</span>, <span class="tag">List</span>&lt;<span class="tag">CombineFileSplit</span>&gt;)</span><br></pre></td></tr></table></figure>
+<p>于是基本确定是在上述方法里发生了死循环，于是继续搜索：<code>hadoop getMoreSplits infinite loop</code>，发现社区有个相关的<a href="https://issues.apache.org/jira/browse/MAPREDUCE-2862" target="_blank" rel="external">issue</a>。关键是这句话：</p>
+<blockquote>
+<p>At first, we lost some blocks by mis-operation . Then, one job tried to use these missing blocks. At that time getMoreSplits() goes into the infinite loop.</p>
+</blockquote>
+<p>上面是因为mis-operation导致的，我没有听说有误操作发生，于是去读代码，同时汇报进展，同事听后告诉我确有一台DataNode挂掉了，那么如果确实是一台DataNode的宕机导致了block missing，则相关文件的replication应该为1，继续hadoop fs查看相关文件的replication，果不其然。</p>
+<p>虽然不是十分明确地指出事故原因，但从一系列的分析来看，基本可以断定是上述原因。读了下上述issue提交的patch，大概的思路是在while(true)中检测是否出现了上述情况，如果出现的话，则强行忽略掉出问题的block，起初我还试图把这个patch打进来，但转念一想，这样会导致出现数据丢失，根本就不治本，问题的实质不是hadoop的错，而是hadoop的使用者没能很好地理解HDFS，在hadoop的世界里，错误是常态，虽然hadoop允许将replication设置为1，但用户必须明白的是hadoop没有义务也没有能力确保用户数据万无一失，用户必须学会通过设置合适的参数来避免单点问题。最终我给出了两条建议：</p>
+<ul>
+<li>严禁用户将replication设置为1</li>
+<li>加强线上机器监控</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前几天监控到一个Hive Job CPU偏高，而且长时间无法停止，我最初怀疑是死循环，于是着手排查了下问题，不算太曲折。虽然已经过去多日，细节都快忘了，不过幸亏chrome的history里保留了一些痕迹，让我能把这件事分享出来。</p>
+<p>由于权限有限，只能从运行Hi]]>
+    </summary>
+    
+      <category term="Hive" scheme="http://jingege.me/tags/hive/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Java堆外内存泄露场景总结]]></title>
+    <link href="http://jingege.me/2013/09/16/java-non-heap-memory-leaks/"/>
+    <id>http://jingege.me/2013/09/16/java-non-heap-memory-leaks/</id>
+    <published>2013-09-16T11:03:02.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>去年在一次QA对我们的一台长连接服务器进行压测后，暴露了一个Java内存泄露问题，结合jconsole、jmap等一系列工具分析和代码review，最后发现是一个存放断开的Socket连接的容器，没有合适的清理释放逻辑。这是在java heap上发生的泄露，如果发生了non-heap上的内存泄露，一般会祭上<code>google-perftools</code>来分析。但不像堆上的泄露原因各种各样，non-heap的泄露原因比较常见的只有几种，因为日常开发中很少有机会操作non-heap内存。</p>
+<p>这里总结一下java的non-heap内存泄露原因。其实说白了也就是介绍下日常开发中，哪里有可能接触到non-heap，哪些东西是放到non-heap上的。</p>
+<p>####JNI</p>
+<p>使用JNI有时为了提高效率，对于这种情况，如果效率提升不是非常大的话，我个人还是建议使用纯Java来替代JNI。正如我去年做的，兄弟部门把人脸识别的判决算法封装到JNI里，而我一向对自己写JNI不太放心，为了降低风险提高系统稳定性，干脆将核心算法翻译成Java了。但对于不得不使用JNI的场景，一定要注意内存的管理，但对于<code>NewStringUTF()</code>这种方法调用，则无需多虑，因为这其实是在java heap上创建Java对象。</p>
+<p>####NIO</p>
+<p>Java的nio有三种方法创建ByteBuffer：<code>wrap(byte[])</code>、<code>allocate(int)</code>、<code>allocateDirect(int)</code>，第三种方法是在堆外申请内存，在使用较大块buffer的时候，能获得较高的效率。不过这种方式申请的内存可以被GC，但是如果使用不当导致泄漏，则比较难查找。</p>
+<p>对于Oracle的HotSpot VM，可以用<code>-XX:MaxDirectMemorySize</code>指定direct buffer的最大值，这个默认值是0，即不限制。</p>
+<p>说句题外话，Oracle的JDK7去掉了allocateDirect所分配内存的页对齐，这样可以减小分配很多小buffer的内存消耗。</p>
+<p>####AWT/Swing<br>二者的一些bug会导致堆内存泄露，对于AWT/Swing引起的堆外内存泄露，我倒没什么经验，摘一个别人发的例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java.awt.Font font = java.awt.Font.createFont(Font.TRUETYPE_FONT, file);</span><br><span class="line">font.deriveFont(Font.PLAIN, i)</span><br></pre></td></tr></table></figure>
+<p>至于哪些数据在堆外分配，读者可以阅读下源码分析下。对于这种情况，可以使用singleton模式解决。</p>
+<p>####Inflater&amp;Deflater</p>
+<p>Java的zip包里两个重要类，记住一定要保证<code>end()</code>能被调用。这个可能比较常见一些，在此就不多做解释了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Inflater inflater = <span class="keyword">null</span>;</span><br><span class="line">Deflater deflater = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">	inflater = <span class="keyword">new</span> Inflater();</span><br><span class="line">   	deflater = <span class="keyword">new</span> Deflater();</span><br><span class="line">&#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    ;</span><br><span class="line">&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">    inflater.end();</span><br><span class="line">	deflater.end();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上就是四种比较常见的non-heap内存泄露原因，如果你的程序有堆外内存泄露的现象，可以着重从上述四个方面查找原因。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>去年在一次QA对我们的一台长连接服务器进行压测后，暴露了一个Java内存泄露问题，结合jconsole、jmap等一系列工具分析和代码review，最后发现是一个存放断开的Socket连接的容器，没有合适的清理释放逻辑。这是在java heap上发生的泄露，如果发生了non]]>
+    </summary>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Ant的一个bug]]></title>
+    <link href="http://jingege.me/2013/09/11/an-ant-bug/"/>
+    <id>http://jingege.me/2013/09/11/an-ant-bug/</id>
+    <published>2013-09-11T09:58:16.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>前几日发现了ant的一个bug。我写的一个打包的ant脚本在我的mac上运行正常，但有同事在windows上则构建失败，我跑到我的windows上测试了下，居然也是失败的，定位了下问题，发现是<code>&lt;jar jarfile=&quot;path/to/a.jar&quot;/&gt;</code>在windows上并未创建相应的path/to二级目录。这是我从没遇到过的情况，我首先想到的是去linux上试了下，打包正常这说明并非我的系统环境有多特殊，于是作为一个MacOS用户，一个诡异的想法便开始形成：我觉得这可能是ant在windows上的bug。</p>
+<p>然后我去apache下载了最新的ant源码，Jar继承了Zip类，扫了一眼相关源码，看到一段：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">File parent = zipFile.getParentFile();</span><br><span class="line"><span class="keyword">if</span> (parent != <span class="keyword">null</span> &amp;&amp; !parent.isDirectory() &amp;&amp; !parent.mkdirs()) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> BuildException(<span class="string">"Failed to create missing parent"</span> + <span class="string">" directory for "</span> + zipFile);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我更疑惑了，看起来ant已经考虑到jar所在的目录的创建了啊。</p>
+<p>于是我跑到windows里，准备调试一下相关逻辑，在eclipse里配置了调试环境，把我那个ant脚本作为参数，在开始debug前，我先运行了一下，居然成功了。越来越疑惑了。</p>
+<p>仔细想了下，我决定把我windows上老的<code>ANT_HOME</code>切换到最新版的ant，然后事情开始明朗了，构建成功了。我终于恍然大悟，可能是因为一直忽略了ant的版本差异，导致浪费这么多精力。我用的是1.7.0版的ant构建出错，但查阅的却是1.9.2版的，难道新版已经修复了这个bug？为了证实这个猜测，我去ant的subversion仓库里，拉取了Zip.java近期的log，终于发现了REV:807960的log：</p>
+<blockquote>
+<p>create parent directory of archive in <zip> and <tar> if needed. PR 45377. Based on patch by Remie Bolte</tar></zip></p>
+</blockquote>
+<p><img src="/images/ant-patch.png" alt="Ant patch"></p>
+<p>果不其然啊！可惜失去一个为开源社区贡献代码的机会。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前几日发现了ant的一个bug。我写的一个打包的ant脚本在我的mac上运行正常，但有同事在windows上则构建失败，我跑到我的windows上测试了下，居然也是失败的，定位了下问题，发现是<code>&lt;jar jarfile=&quot;path/to/a.jar]]>
+    </summary>
+    
+      <category term="Ant" scheme="http://jingege.me/tags/ant/"/>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[[开源]DataX的oracle JDBC writer插件]]></title>
+    <link href="http://jingege.me/2013/09/05/datax-oracle-jdbc-writer-plugin-opensource/"/>
+    <id>http://jingege.me/2013/09/05/datax-oracle-jdbc-writer-plugin-opensource/</id>
+    <published>2013-09-05T15:15:30.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>项目地址：<a href="https://github.com/jingege/datax-oraclejdbcwriter" target="_blank" rel="external">https://github.com/jingege/datax-oraclejdbcwriter</a></p>
+<blockquote>
+<p>取之于开源，用之于开源</p>
+</blockquote>
+<p>淘宝的DataX开源版本只提供了OCI方式的oracle writer plugin，部署起来有点麻烦。基于JDBC驱动的话，性能虽然不及OCI，但一般只要不是太苛刻的需求，还是能满足的。</p>
+<p>DataX的插件机制让对其扩展变得十分简单，所以实现一个插件并非难事，而且笔者提交的代码也并不漂亮，故此次开源仅仅是作为对开源社区的一次微不足道的回馈，理所应当。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>项目地址：<a href="https://github.com/jingege/datax-oraclejdbcwriter" target="_blank" rel="external">https://github.com/jingege/datax-oraclejd]]>
+    </summary>
+    
+      <category term="DataX" scheme="http://jingege.me/tags/datax/"/>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="开源" scheme="http://jingege.me/tags/opensource/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[[开源]yaderde框架]]></title>
+    <link href="http://jingege.me/2013/09/05/yaserde-opensource/"/>
+    <id>http://jingege.me/2013/09/05/yaserde-opensource/</id>
+    <published>2013-09-05T14:05:40.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>项目地址：<a href="https://github.com/jingege/yaserde" target="_blank" rel="external">https://github.com/jingege/yaserde</a></p>
+<p>其实当我决定写这个框架的时候，我突然意识到，我想要的正如hadoop的<code>Writable</code>做的，而且hadoop已经做得相当好了。可我还是决定要按自己的思路造一个轮子出来。一来自娱自乐，二来也算是对过去几年遗憾的稍许弥补。目前只做了个雏形，但对于简单场景还是可用的。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>项目地址：<a href="https://github.com/jingege/yaserde" target="_blank" rel="external">https://github.com/jingege/yaserde</a></p>
+<p>其实当我决定写这个框]]>
+    </summary>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="Yaserde" scheme="http://jingege.me/tags/yaserde/"/>
+    
+      <category term="开源" scheme="http://jingege.me/tags/opensource/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[记一个Iterator的异常]]></title>
+    <link href="http://jingege.me/2013/09/03/an-iterator-exception/"/>
+    <id>http://jingege.me/2013/09/03/an-iterator-exception/</id>
+    <published>2013-09-03T04:03:40.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在一个熟悉的场景首次遇到了异常，在使用ArrayList的Iterator时，抛出了<code>java.lang.IllegalStateException</code>。仔细分析后，发现是一个不合适的循环嵌套，导致了<code>it.remove()</code>连续调用了两次。结合源码看了下，<code>AbstractList$Itr</code>类使用了一个<code>int lastRet</code>变量标记最近一次<code>next()</code>所指向的元素，而在调用<code>it.remove()</code>时，先检查lastRet的值，如果为-1，则抛出<code>IllegalStateException</code>，否则将lastRet置为-1。用以保证一个元素只被remove一次。在Itr类的子类ListIterator里，<code>previous()</code>也是同样原理。</p>
+<p>古人云：</p>
+<blockquote>
+<p>吃一堑长一智</p>
+</blockquote>
+<p>又云：</p>
+<blockquote>
+<p>学如逆水行舟，不进则退</p>
+</blockquote>
+<p>重点在吃和行两个字，讲究行动，一定要在实践中遇到困难，并解决，方能长一智，方能前进。对于码农，则一定是要多动手，多碰钉子，多独立解决问题，如是自勉。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在一个熟悉的场景首次遇到了异常，在使用ArrayList的Iterator时，抛出了<code>java.lang.IllegalStateException</code>。仔细分析后，发现是一个不合适的循环嵌套，导致了<code>it.remove()</code>连]]>
+    </summary>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[对user.dir的误解]]></title>
+    <link href="http://jingege.me/2013/08/28/user-dir-env-misunderstand/"/>
+    <id>http://jingege.me/2013/08/28/user-dir-env-misunderstand/</id>
+    <published>2013-08-28T04:03:40.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>今天调试程序的时候，发现我之前hard code的一段路径修改成了<code>System.getProperty(&quot;user.dir&quot;)</code>之后，依然可以正常运行。我一直以来都以为user.dir就是当前用户的home dir，似乎这个印象应该自大学时代就已经有了，所以我有些先入为主地认为是环境有问题。</p>
+<p>我的程序是最终由一个py脚本调用jar包来执行，为了搞明白这个困惑的问题，我在java代码里插入了多处<code>out.println(System.getProperty(&quot;user.dir&quot;))</code>，然后执行py，结果输出并非home dir。于是凭直觉将问题定位在py里的一句<code>os.chdir(sys.path[0]+&quot;/..&quot;)</code>上。再然后我就写了个测试的Main函数，在控制台直接<code>java -cp a.jar path.to.Main</code>，果然输出了当前目录，于是问题清晰了。</p>
+<p>于是网上查了下，竟然是我搞混了。如下摘自<a href="http://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html" target="_blank" rel="external">jdk文档</a>：</p>
+<blockquote>
+<p>“user.dir”  User working directory</p>
+<p>“user.home”  User home directory</p>
+</blockquote>
+<p>最后我也终于记起来为什么会有这个错误的印象了。大学时用java写了个简单的http server，创建配置文件时，我默认写在了user.home，所以有了这个印象。如今看到user.dir，便和user.home混淆起来。</p>
+<p>都写这么多年java了，让大家见笑了。问题也搞清楚了，我发现以后遇到路径问题，借助<code>user.dir</code>和脚本，可以非常方便的解决了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天调试程序的时候，发现我之前hard code的一段路径修改成了<code>System.getProperty(&quot;user.dir&quot;)</code>之后，依然可以正常运行。我一直以来都以为user.dir就是当前用户的home dir，似乎这个印象应]]>
+    </summary>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[4clojure]]></title>
+    <link href="http://jingege.me/2013/08/21/4clojure/"/>
+    <id>http://jingege.me/2013/08/21/4clojure/</id>
+    <published>2013-08-21T10:30:00.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>最近开始在<a href="http://www.4clojure.com/" target="_blank" rel="external">4clojure</a>上刷题，推荐对clojure有兴趣的同学一起来玩。</p>
+<p>正好刷到第38题，贴出来分享下。</p>
+<blockquote>
+<p>Write a function which takes a variable number of parameters and returns the maximum value.</p>
+</blockquote>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">=</span></span> <span class="list">(<span class="keyword">__</span> <span class="number">1</span> <span class="number">8</span> <span class="number">3</span> <span class="number">4</span>)</span> <span class="number">8</span>)</span></span><br><span class="line"></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">=</span></span> <span class="list">(<span class="keyword">__</span> <span class="number">30</span> <span class="number">20</span>)</span> <span class="number">30</span>)</span></span><br><span class="line"></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">=</span></span> <span class="list">(<span class="keyword">__</span> <span class="number">45</span> <span class="number">67</span> <span class="number">11</span>)</span> <span class="number">67</span>)</span></span><br></pre></td></tr></table></figure>
+<p>不得使用max和max-key</p>
+<p>##解</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">fn</span></span> <span class="collection">[x &amp; other]</span> <span class="list">(<span class="keyword"><span class="built_in">reduce</span></span> #<span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="list">(<span class="keyword"><span class="built_in">&gt;</span></span> %<span class="number">1</span> %<span class="number">2</span>)</span> %<span class="number">1</span> %<span class="number">2</span>)</span> x other)</span>)</span></span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近开始在<a href="http://www.4clojure.com/" target="_blank" rel="external">4clojure</a>上刷题，推荐对clojure有兴趣的同学一起来玩。</p>
+<p>正好刷到第38题，贴出来分享下。</p>
+]]>
+    </summary>
+    
+      <category term="Clojure" scheme="http://jingege.me/tags/clojure/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[中国式开源的三宗罪]]></title>
+    <link href="http://jingege.me/2013/08/09/china-opensource-3-deadly-sins/"/>
+    <id>http://jingege.me/2013/08/09/china-opensource-3-deadly-sins/</id>
+    <published>2013-08-09T06:51:25.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>“月亮还是外国的圆”</p>
+</blockquote>
+<p>这话放到IT行业，我感觉让人不好去否认。</p>
+<p>IT技术发源自西方（没算盘什么事吧？！），根基也在西方。先不说各种各样的网络协议、有名无名的编程语言，即使比较优秀的框架或库什么的也都难觅中国智造。这有语言、文化、国情等多方面原因，不想吐槽过多，今天只想聊聊“中国式开源”。</p>
+<p>这两年IT圈子不知怎么，突然一改只从开源社区索取，绝不向社区贡献的猥琐姿态，各种中国智造的开源项目如雨后春笋般出现。但笔者感觉这些项目大都是中国特色的，属于中国式的。什么是中国式开源？我觉得下面三个字概括的很好（出处不详）：</p>
+<blockquote>
+<p>晒 代 码</p>
+</blockquote>
+<p>最近业余在看国外一个著名开源项目的源码。深感其社区之活跃，笔者读书那会虽然已经经常在sourceforge.net（日薄西山）爬来爬去，但对<em>社区</em>（community）这个概念理解并不深，毕竟那会太嫩，几百上千行代码写出来就敢自称框架，还厚颜无耻地扔到sourceforge.net给人看。扯远了。</p>
+<p>前几日，由于工作需要，去看了国内一家互联网大厂开源的某项目（就不点名了，该项目自称用户很多）。两相比较，感慨万千，正好反映了我本文想表达的“三宗罪”。下面细数一下。</p>
+<p>###代码品质###</p>
+<p>我没有用代码质量这个词。因为代码质量直接让人联想到项目的源码写的好不好、格式工不工整、逻辑清不清晰、抽象优不优雅等，这些我不够格来评判。这里说品质，包括几方面。</p>
+<p>首先是测试用例。有时候测试用例可以从侧面反映出某些类的用法，也可以暴露某些关键逻辑，这对于代码的学习者，还是比较关键的。可是我看的那个项目源码，一个用例都没有。</p>
+<p>其次是代码内容。这里有个关键问题就是出自中国的开源项目，很多都是来自企业内部的改造，即把内部运行良好的项目，抽取适宜公开的部分包装而成。这就导致这些项目里有时会残留有这家企业的业务气息。导致不能很好的抽象大众化的需求。</p>
+<p>###文档###</p>
+<p>中国式文档也不得不让人吐槽。该大厂的这个开源项目，我翻遍网络，只觅得一份架构简介、安装说明，区区几页纸。不过好在有一些javadoc，可以生成源码的文档。但谈到前面所说的某国外项目，从README到如何为本项目贡献代码，从WIKI到tutorial，从ISSUES到maillist，一应俱全。甚至作者在采纳了你的patch，要把你加到contributor列表之前，都要先签一份agreement才行。不得不佩服老外的职业和专业精神。</p>
+<p>至于为什么我们很难写出一份好文档，我觉得和国情有关，也和文化有关。中国人码农大都年轻，而且大都忙于糊口，公司也大都在压榨员工。很多时候大家都在赶工期。代码都写不完，何谈文档？虽然没有和老外共事过，也没出过国，但从很多老外的博客来看，很多人年龄都比较大，属于经验派，同时，生活压力也不会太大，爱好广泛，生活安逸。饱暖思淫欲，这话放到ITer身上，便是饱暖思代码，一个道理。</p>
+<p>###社区活跃度###</p>
+<p>上文谈到的国外的开源项目，社区活跃，contributor很多，项目的leader也经常出来和社区互动，言辞亲切。</p>
+<p>我在阅读大厂的开源代码时，遇到一些不解的问题，由于文档太少，搜索引擎上关于此项目的讨论也不多，无奈便去微博@了一下几位该项目的开发者，至今杳无音讯。何故？项目主页不是说了有问题可以这么问的么。除此之外，我没看到如何能贡献patch，没看到邮件列表。</p>
+<p>综上所述，我认为中国式开源就是在晒代码，虎头蛇尾般。有如小树成长为大树，开源项目亦是如此。好的开源项目，码农乐于参与，维护者做得好的话，肯定会朝着好的方向演进。但面对晒代码式的开源项目维护者，再好的项目都怕是让人望而却步。</p>
+<p>临了，此文绝非对大厂的开发者不回答笔者问题的打击报复。实乃多年码农生涯积累下来的吐槽。希望中国码农少一些浮躁。多一些对技术的真挚追求。国内企业少一些压榨，多给码农一些时间和空间。码农从来不是企业的成本，而是企业难得的财富。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>“月亮还是外国的圆”</p>
+</blockquote>
+<p>这话放到IT行业，我感觉让人不好去否认。</p>
+<p>IT技术发源自西方（没算盘什么事吧？！），根基也在西方。先不说各种各样的网络协议、有名无名的编程语言，即使比较优秀的框架或库什么]]>
+    </summary>
+    
+      <category term="开源" scheme="http://jingege.me/tags/opensource/"/>
+    
+      <category term="生活" scheme="http://jingege.me/categories/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[clojure工程构建之lein篇]]></title>
+    <link href="http://jingege.me/2013/08/08/lein/"/>
+    <id>http://jingege.me/2013/08/08/lein/</id>
+    <published>2013-08-08T09:30:00.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>最近为了看storm的源码，开始了clojure的系统学习。clojure因为背负了Java这个历史大包袱，在语法上相对于其他Lisp方言，还是稍显复杂和罗嗦。JVM语言似乎都很难摆脱JAVA的身影，互操作是件很难做得优雅的事情。不过FP的魅力还是让我坚持下来，准备长期作战，不断学习和积累。本文不进一步讨论clojure，只<strong>简单</strong>介绍下使用lein进行clojure工程的构建，因为我个人对gradle很感兴趣（出于对groovy的好感）后续可能会再写一篇使用gradle的构建。</p>
+<p>storm的源码就采用了lein构建，可以看下工程根目录下有project.clj文件。就目前看到的clojure开源项目，用lein的还是居多的。</p>
+<p>##lein的安装##<br>查看lein的github主页：<a href="https://github.com/technomancy/leiningen" target="_blank" rel="external">https://github.com/technomancy/leiningen</a>，对于lein在*nix上的安装，比较简单的步骤是<a href="https://raw.github.com/technomancy/leiningen/stable/bin/lein" target="_blank" rel="external">下载此脚本</a>，放到<code>PATH</code>里，并执行<code>chmod 755 /path/to/lein</code>即可。首次执行该脚本会下载相关的文件并默认安装到<code>~/.lein</code>。</p>
+<p>##创建新工程##<br>这里我们创建一个简单的示例工程：</p>
+<p><code>$ lein new app leinexample</code></p>
+<p>控制台输出：</p>
+<p><code>Generating a project called leinexample based on the &#39;app&#39; template.</code></p>
+<p>也就是说，app是工程的模板名，lein默认的模板是default。模板是插件化的，所以可以很容易扩展，<a href="https://clojars.org/search?q=lein-template" target="_blank" rel="external">这里</a>就有很多模板。下图是我们用<code>find .</code>列出的lein的默认目录结构。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">billmac:leinexample jingege$ find .</span><br><span class="line">.</span><br><span class="line">./.gitignore</span><br><span class="line">./doc</span><br><span class="line">./doc/intro.md</span><br><span class="line">./project.clj</span><br><span class="line">./README.md</span><br><span class="line">./src</span><br><span class="line">./src/leinexample</span><br><span class="line">./src/leinexample/core.clj</span><br><span class="line">./<span class="built_in">test</span></span><br><span class="line">./<span class="built_in">test</span>/leinexample</span><br><span class="line">./<span class="built_in">test</span>/leinexample/core_test.clj</span><br></pre></td></tr></table></figure>
+<p>重点是project.clj</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defproject</span> leinexample <span class="string">"0.1.0-SNAPSHOT"</span></span><br><span class="line">  <span class="attribute">:description</span> <span class="string">"FIXME: write description"</span></span><br><span class="line">  <span class="attribute">:url</span> <span class="string">"http://example.com/FIXME"</span></span><br><span class="line">  <span class="attribute">:license</span> <span class="collection">&#123;<span class="attribute">:name</span> <span class="string">"Eclipse Public License"</span></span><br><span class="line">            <span class="attribute">:url</span> <span class="string">"http://www.eclipse.org/legal/epl-v10.html"</span>&#125;</span></span><br><span class="line">  <span class="attribute">:dependencies</span> <span class="collection">[<span class="collection">[org.clojure/clojure <span class="string">"1.5.1"</span>]</span>]</span></span><br><span class="line">  <span class="attribute">:main</span> leinexample.core)</span></span><br></pre></td></tr></table></figure>
+<p>默认只列出了lein project的一部分属性，包括工程名以及相关元信息、license、依赖等等。<a href="https://github.com/technomancy/leiningen/blob/stable/sample.project.clj" target="_blank" rel="external">这里</a>有最全面的工程定义样例可以参考。</p>
+<p>##导入到IDE##</p>
+<p>起初像学习erlang一样，我使用emacs进行clj的练习，但尽管我个人对emacs很有好感，不过对于阅读代码这种事情，还是使用IDE的好。</p>
+<p>如果需要使用eclipse或IntellijIdea等支持maven的IDE，可以使用<code>lein pom</code>来生成pom文件，然后直接使用IDE导入maven工程。个人感觉IntellijIdea真的是非常强悍的IDE，当然不仅仅是说对clojure的支持。</p>
+<p>##管理依赖##</p>
+<p>在project.clj中可以添加依赖包，比如，我们在project.clj的dependencies中添加一条：</p>
+<p><code>:dependencies [[org.clojure/clojure &quot;1.5.1&quot;] [clj-http &quot;0.6.5&quot; :exclusions [crouton]]]</code></p>
+<p>执行<code>lein deps</code>，控制台输出：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Retrieving clj-http/clj-http/<span class="number">0.6</span>.<span class="number">5</span>/clj-http-<span class="number">0.6</span>.<span class="number">5</span>.pom from clojars</span><br><span class="line">Retrieving org/apache/httpcomponents/httpcore/<span class="number">4.2</span>.<span class="number">3</span>/httpcore-<span class="number">4.2</span>.<span class="number">3</span>.pom from central</span><br><span class="line">……</span><br><span class="line">Retrieving clj-http/clj-http/<span class="number">0.6</span>.<span class="number">5</span>/clj-http-<span class="number">0.6</span>.<span class="number">5</span>.jar from clojars</span><br><span class="line">RetrievingRetrieving  slingshot/slingshot/<span class="number">0.10</span>.<span class="number">3</span>/slingshot-<span class="number">0.10</span>.<span class="number">3</span>.jar cheshire/cheshire/<span class="number">5.0</span>.<span class="number">2</span>/cheshire-<span class="number">5.0</span>.<span class="number">2</span>.jarfrom  from clojars</span><br><span class="line">clojars</span><br></pre></td></tr></table></figure>
+<p>你可能发现，下载的依赖包，并不在工程目录里，其实lein是整合了maven，上述包其实已经下载到maven的本地仓库了。</p>
+<p>##运行测试用例##</p>
+<p>lein会默认生成一个clj和对应的测试用例文件，打开<code>leinexample/test/leinexample/core_test.clj</code>，修改<code>a-test</code>函数的返回值为true，即修改最后一行为<code>(is (= 0 0))</code>即可。然后执行：</p>
+<p><code>lein test</code></p>
+<p>控制台会打印出测试用例的运行结果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lein <span class="built_in">test</span> leinexample.core-test</span><br><span class="line"></span><br><span class="line">Ran <span class="number">1</span> tests containing <span class="number">1</span> assertions.</span><br><span class="line"><span class="number">0</span> failures, <span class="number">0</span> errors.</span><br></pre></td></tr></table></figure>
+<p>##编译代码##</p>
+<p>此时如果直接运行<code>lein compile</code>，你会发现，<code>target</code>目录里没有<code>.class</code>文件。这个起初也让我很不解。查阅了相关文档发现需要开启<code>aot</code>即<code>compile Ahead Of Time</code>，在project.clj的<code>defproject</code>函数添加metadata：</p>
+<p><code>:aot [leinexample.core]</code></p>
+<p>之后再执行<code>lein compile</code>，即可在<code>target/classes</code>里看到对应的<code>.class</code>文件了。</p>
+<blockquote>
+<p>注意，上述大多数目录，如target、classes等，都可以在project.clj中修改。</p>
+</blockquote>
+<p>##打包##</p>
+<p>lein支持jar、uberjar等等打包方式，具体可以使用<code>lein -h</code>可以查看lein的其他子命令。应该也可以直接打出war包，这个我没有尝试过，有兴趣的充分发挥google的力量吧。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近为了看storm的源码，开始了clojure的系统学习。clojure因为背负了Java这个历史大包袱，在语法上相对于其他Lisp方言，还是稍显复杂和罗嗦。JVM语言似乎都很难摆脱JAVA的身影，互操作是件很难做得优雅的事情。不过FP的魅力还是让我坚持下来，准备长期作战]]>
+    </summary>
+    
+      <category term="Clojure" scheme="http://jingege.me/tags/clojure/"/>
+    
+      <category term="Leiningen" scheme="http://jingege.me/tags/leiningen/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[简析Java Reference]]></title>
+    <link href="http://jingege.me/2013/05/31/java-references/"/>
+    <id>http://jingege.me/2013/05/31/java-references/</id>
+    <published>2013-05-31T06:43:40.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>Coding了多年Java，自然早就听说过四种引用类型，不过偶尔也才浅浅的用一下，今天突然想看看这块的内部实现，读了读jdk源码，这篇文章就当做个笔记。先简单介绍下四种引用类型：</p>
+<p>####Java的四种引用类型####</p>
+<ul>
+<li>StrongReference</li>
+</ul>
+<blockquote>
+<p>强引用。最常见的引用类型，用赋值号，即“=”来创建。GC不会回收强引用，即使内存不足，也是宁可抛OOM先。</p>
+</blockquote>
+<ul>
+<li>SoftReference</li>
+</ul>
+<blockquote>
+<p>软引用。关键看内存，在内存不足时，GC会把软引用的对象回收掉。适用于对内存敏感的缓存。</p>
+</blockquote>
+<ul>
+<li>WeakReference</li>
+</ul>
+<blockquote>
+<p>弱引用。和软引用的区别是，无论内存充足与否，GC扫描到弱引用所引用的对象不再具有强引用时，会将其回收。</p>
+</blockquote>
+<ul>
+<li>PhantomReference</li>
+</ul>
+<blockquote>
+<p>虚引用，也称幽灵引用。其get()方法固定return null，看起来似乎没有什么大的用处，但在某些场景下结合ReferenceQueue，可以有意想不到的效果。</p>
+</blockquote>
+<p>####ReferenceQueue####<br>站在coder的角度看，ReferenceQueue似乎更“有用”一些。其作用是追踪被gc的Reference对象，更多的是做一些统计或清理的工作。</p>
+<p>####Reference的四种内部状态和ReferenceHandler####</p>
+<p>Reference依赖内部的四种状态，和GC、ReferenceHandler配合来运作，包括：Active、Pending、Enqueued和Inactive，具体可以查看下Reference类的注释，鉴于笔者理解不足够深刻，就不误导大家了。</p>
+<p>ReferenceHandler是个高优先级的线程，用于把gc处理的Reference对象enqueue到ReferenceQueue中。</p>
+<p>近期使用SoftReference自己做了个缓存工具，用以缓存一定size的Hive查询结果，代码<a href="https://gist.github.com/jingege/6060151" target="_blank" rel="external">在这里</a>。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Coding了多年Java，自然早就听说过四种引用类型，不过偶尔也才浅浅的用一下，今天突然想看看这块的内部实现，读了读jdk源码，这篇文章就当做个笔记。先简单介绍下四种引用类型：</p>
+<p>####Java的四种引用类型####</p>
+<ul>
+<li>StrongR]]>
+    </summary>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hi,Pages]]></title>
+    <link href="http://jingege.me/2013/03/29/my-github-pages/"/>
+    <id>http://jingege.me/2013/03/29/my-github-pages/</id>
+    <published>2013-03-29T07:50:45.000Z</published>
+    <updated>2015-12-10T17:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>####缘起</p>
+<p>自我的个人域名因为忘记续费被美帝可耻地抢注后，便再没心情维护我的博客，甚至最后Linode的每月19刀也竟然感觉是个累赘。</p>
+<p>某次在有为同学感慨入职alipay之初的林林总总之后，聊起来是否该重新维护一个博客以记录成长之点滴，于是两人各自去寻安家之所。他去了<a href="http://www.oschina.net" target="_blank" rel="external"><code>oschina</code></a>，我对国内的网络服务一直是实在不放心，便决定好好琢磨下Github Pages。</p>
+<p>从Page Generation到<code>Pelican</code>，再到<code>Jekyll</code>。总算让我把这个博客整得有点样子了。最初使用Pelican是看到有博文写了使用说明，试了下也甚是简单，而且功能俱全，自带category、tag等功能，但无奈实在找不到合适的主题，终于放弃。</p>
+<p>于是转投Jekyll旗下，不过Jekyll要实现category/tag的功能，是要借助第三方插件，但github官方出于安全考虑，居然把Jekyll的插件机制禁用了，无奈只能选择禁用pages的自动编译功能，这是后话。</p>
+<p>####主题<br>一个好的博客，首先主题要说得过去，我最终fork了caarlos0的<a href="http://caarlos0.github.com/posts/up-a-jekyll-theme/" target="_blank" rel="external">UP</a>主题，主要是因为它实在是太简洁了，比较容易个性化定制。实际上我只对主题本身做了少许的几处调整。</p>
+<p>####Sharing<br>UP主题只有Twitter的分享按钮，我用JiaThis的分享服务给替换掉了。</p>
+<p>####Commenting<br>绝大多数类似Pages的静态网页服务，其评论功能都使用了<a href="http://disqus.com/" target="_blank" rel="external">Disqus</a>的Commenting服务，不过某日在微博看到新秀<a href="http://moot.it" target="_blank" rel="external"><code>moot</code></a>之后，便决定拿moot替换掉Disqus。moot的slogan是<code>Forums and commenting re-imagined</code>，听起来煞是令人耳目一新，实际注册了用来，也确实是比较大的创新，其Path风格的api设计得很精巧。但其门槛很低，看一遍文档我就把moot装备上了。最难的地方应该是要用插件把post的file name取出来，作为comment的path的key部分，这让我学会了写Jekyll插件。</p>
+<p>####Code highlight<br>作为技术博客，代码高亮肯定是必不可少的了，个人认为使用gist会很好，但最终还是选择内置的<a href="http://pygments.org/" target="_blank" rel="external"><code>Pygments</code></a>支持。</p>
+<p>首先是安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install Pygments</span><br></pre></td></tr></table></figure>
+<p>其次要创建相关css文件，这个新手往往会忽略：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> path/to/jekyll/project/folder</span><br><span class="line">$ pygmentize -S default <span class="operator">-f</span> html &gt; css/pygments.css</span><br></pre></td></tr></table></figure>
+<p>其中default是指样式名，可以用如下方式查看有哪些样式：</p>
+<figure class="highlight python"><figcaption><span>查看样式</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="prompt">&gt;&gt;&gt; </span><span class="keyword">from</span> pygments.styles <span class="keyword">import</span> STYLE_MAP</span><br><span class="line"><span class="prompt">&gt;&gt;&gt; </span>STYLE_MAP.keys()</span><br><span class="line">[<span class="string">'monokai'</span>, <span class="string">'manni'</span>, <span class="string">'rrt'</span>, <span class="string">'perldoc'</span>, <span class="string">'borland'</span>, <span class="string">'colorful'</span>, <span class="string">'default'</span>, <span class="string">'murphy'</span>, <span class="string">'vs'</span>, <span class="string">'trac'</span>, <span class="string">'tango'</span>, <span class="string">'fruity'</span>, <span class="string">'autumn'</span>, <span class="string">'bw'</span>, <span class="string">'emacs'</span>, <span class="string">'vim'</span>, <span class="string">'pastie'</span>, <span class="string">'friendly'</span>, <span class="string">'native'</span>]</span><br></pre></td></tr></table></figure>
+<p>最后只要把css文件引入，用liquid嵌入代码即可：</p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="var_expand">% highlight java %</span>&#125;</span><br><span class="line">code goes here~</span><br><span class="line">&#123;<span class="var_expand">% endhighlight %</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>####Category &amp; Tag<br>这是博客必不可少的功能了，但Jekyll只能通过插件来实现，我不懂Ruby，所以只能fork去了。参照<a href="http://realjenius.com/2012/12/01/jekyll-category-tag-paging-feeds/" target="_blank" rel="external">realjenius</a>的代码，把category和tag页面生成。但比较麻烦的是修改UP的主题，把category和tag链接加进来，整个过程就是在写Liquid模板，很简单。</p>
+<p>但是使用插件，也就意味着无法让github自动编译发布博客，必须在本地把<code>md</code>处理成<code>html</code>，然后push到github才能发布。所以我最终采用了三个git分支：</p>
+<ul>
+<li><p>master分支，用来存放生成后的文件（默认在<code>_site</code>目录下），注意要加.nojekyll文件来禁止Pages的自动发布</p>
+</li>
+<li><p>gh-pages分支，仅仅是Github Pages的必须的标记分支</p>
+</li>
+<li><p>source分支，存放整站源码</p>
+</li>
+</ul>
+<p>发布的步骤大概是先在source分支下编写并push到origin:source，然后编译到<code>_site</code>下，切换到master分支，把<code>_site</code>下的文件覆盖过来，commit、push一路过来即可。</p>
+<p>####结束<br>即便是这篇文章，也拖了好久。希望自己这次能在这个琐事缠身的年纪，坚持把这个博客维护下去。本文并未详细讲解使用Jekyll搭建Pages的过程，喜欢我这个主题的，可以<code>fork</code>我的代码。如果有其他疑问，也可以直接联系我。</p>
+<p>PS:后来我又把评论切回Disqus了，moot太小众了- -||</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>####缘起</p>
+<p>自我的个人域名因为忘记续费被美帝可耻地抢注后，便再没心情维护我的博客，甚至最后Linode的每月19刀也竟然感觉是个累赘。</p>
+<p>某次在有为同学感慨入职alipay之初的林林总总之后，聊起来是否该重新维护一个博客以记录成长之点滴，于是两人]]>
+    </summary>
+    
+      <category term="生活" scheme="http://jingege.me/tags/life/"/>
+    
+      <category term="生活" scheme="http://jingege.me/categories/life/"/>
+    
+  </entry>
+  
+</feed>

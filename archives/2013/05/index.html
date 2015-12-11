@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="晋哥哥的私房钱" href="/atom.xml"><link rel="stylesheet" href="/styles.css?v=0.4.5"><link rel="stylesheet" href="/css/main.css?v=0.4.5"><title>归档：2013 年 5 月 | 晋哥哥的私房钱</title></head><body><div class="container"><div class="columns page-header"><h1>晋哥哥的私房钱</h1></div><div class="columns"><div class="navigation clearfix"><nav class="left"><a href="/" class="favicon"><img alt="晋哥哥的私房钱" src="/favicon.ico"></a><a href="/">首页</a><a href="/about">关于我</a><a href="/booklist">书单</a><a href="/cheatsheet">小抄</a></nav><nav class="right"><a href="/atom.xml">RSS</a><a target="_blank" href="http://github.com/jingege">fork on Github</a></nav></div></div><div class="columns"><div class="block-body column three-fourths"><div class="archive-title">小站重新装修，欢迎到访。</div><div class="archive-title"><strong>归档 2013 年 5 月</strong></div><article><header><h2><a href="/2013/05/31/java-references/">简析Java Reference</a></h2></header><div class="article-meta clearfix"><time class="left">2013 5 月 31 日</time><ul class="tags left"><li><a href="/categories/technology/">技术</a></li></ul><ul class="tags right"><li><a href="/tags/java/">Java</a></li></ul></div><div class="markdown-body"><p>Coding了多年Java，自然早就听说过四种引用类型，不过偶尔也才浅浅的用一下，今天突然想看看这块的内部实现，读了读jdk源码，这篇文章就当做个笔记。先简单介绍下四种引用类型：</p>
+<p>####Java的四种引用类型####</p>
+<ul>
+<li>StrongReference</li>
+</ul>
+<blockquote>
+<p>强引用。最常见的引用类型，用赋值号，即“=”来创建。GC不会回收强引用，即使内存不足，也是宁可抛OOM先。</p>
+</blockquote>
+<ul>
+<li>SoftReference</li>
+</ul>
+<blockquote>
+<p>软引用。关键看内存，在内存不足时，GC会把软引用的对象回收掉。适用于对内存敏感的缓存。</p>
+</blockquote>
+<ul>
+<li>WeakReference</li>
+</ul>
+<blockquote>
+<p>弱引用。和软引用的区别是，无论内存充足与否，GC扫描到弱引用所引用的对象不再具有强引用时，会将其回收。</p>
+</blockquote>
+<ul>
+<li>PhantomReference</li>
+</ul>
+<blockquote>
+<p>虚引用，也称幽灵引用。其get()方法固定return null，看起来似乎没有什么大的用处，但在某些场景下结合ReferenceQueue，可以有意想不到的效果。</p>
+</blockquote>
+<p>####ReferenceQueue####<br>站在coder的角度看，ReferenceQueue似乎更“有用”一些。其作用是追踪被gc的Reference对象，更多的是做一些统计或清理的工作。</p>
+<p>####Reference的四种内部状态和ReferenceHandler####</p>
+<p>Reference依赖内部的四种状态，和GC、ReferenceHandler配合来运作，包括：Active、Pending、Enqueued和Inactive，具体可以查看下Reference类的注释，鉴于笔者理解不足够深刻，就不误导大家了。</p>
+<p>ReferenceHandler是个高优先级的线程，用于把gc处理的Reference对象enqueue到ReferenceQueue中。</p>
+<p>近期使用SoftReference自己做了个缓存工具，用以缓存一定size的Hive查询结果，代码<a href="https://gist.github.com/jingege/6060151" target="_blank" rel="external">在这里</a>。</p>
+</div></article><div class="archive-pagination"><div class="paginator"><span class="page-number current">1</span></div></div></div><div class="block-sidebar column one-fourth"><div class="widget text-content"><p>博主是一个不是很聪明的码农。完美主义者，强迫症中期。这里会记录一些回忆和点滴，以博为镜。</p>
+<p>武器库：</p>
+<ul>
+<li><a href="http://www.apple.com/cn/macbook-pro/">MacBook Pro</a></li>
+<li><a href="https://www.jetbrains.com/idea/">Intellij IDEA</a></li>
+<li><a href="https://www.iterm2.com/">iTerm2</a></li>
+<li><a href="http://honx.in/_U9DPy38mTieZk3On">红杏</a></li>
+<li><a href="https://www.oracle.com/java/">Java</a>/<a href="http://scala-lang.org/">Scala</a></li>
+</ul>
+</div><div class="widget tags"><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ant/">Ant</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/btrace/">Btrace</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clojure/">Clojure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/datax/">DataX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/emacs/">Emacs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash/">Hash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hive/">Hive</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jumper/">Jumper</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/leiningen/">Leiningen</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mq/">MQ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oozie/">Oozie</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yaserde/">Yaserde</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/memorandum/">备忘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opensource/">开源</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/">生活</a></li></ul></div><div class="widget archives"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">五月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li></ul></div><div class="widget text-content"><p>该博客使用基于 &nbsp;<a href="http://hexo.io">Hexo</a>&nbsp; 的 &nbsp;<a href="https://github.com/jysperm/hexo-theme-simpleblock">simpleblock</a>&nbsp; 主题。博客内容使用 &nbsp;<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn">CC BY-NC-SA 3.0</a>&nbsp; 授权发布。最后生成于 2015-12-11.</p></div></div></div></div><script>window.duoshuoQuery = {short_name: 'jingege'}</script><script src="https://static.duoshuo.com/embed.js"></script></body></html>

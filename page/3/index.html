@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="晋哥哥的私房钱" href="/atom.xml"><link rel="stylesheet" href="/styles.css?v=0.4.5"><link rel="stylesheet" href="/css/main.css?v=0.4.5"><title>晋哥哥的私房钱</title></head><body><div class="container"><div class="columns page-header"><h1>晋哥哥的私房钱</h1></div><div class="columns"><div class="navigation clearfix"><nav class="left"><a href="/" class="favicon"><img alt="晋哥哥的私房钱" src="/favicon.ico"></a><a href="/">首页</a><a href="/about">关于我</a><a href="/booklist">书单</a><a href="/cheatsheet">小抄</a></nav><nav class="right"><a href="/atom.xml">RSS</a><a target="_blank" href="http://github.com/jingege">fork on Github</a></nav></div></div><div class="columns"><div class="block-body column three-fourths"><div class="archive-title">小站重新装修，欢迎到访。</div><article><header><h2><a href="/2013/10/10/my-emacs/">我的Emacs</a></h2></header><div class="article-meta clearfix"><time class="left">2013 10 月 10 日</time><ul class="tags left"><li><a href="/categories/technology/">技术</a></li></ul><ul class="tags right"><li><a href="/tags/emacs/">Emacs</a></li></ul></div><div class="markdown-body"><p>初识emacs还是在大学时代，因为编程比赛获奖而有幸通过面试进入<a href="http://online.cumt.edu.cn" target="_blank" rel="external">学生在线</a>这个大家庭，从而和大炮、yada等同学相识，跟他们学了很多。据说当时技术部新进小同学的时候，要由一名老成员在不经意间秀一下emacs的操作，刺激一下，不过我实在记不起来何时起开始用emacs，似乎是当年和大炮一起用PHP写网站的时候看他用，然后被王垠那篇神作《Emacs是一种信仰！世界最强编辑器介绍》感动之后开始学习的吧。后来毕业后不久听说那帮新来的熊孩子居然把工作室的Linux服务器全部都装成WindowsServer了，真是败家败业！Linux都不用了，想必也没人再去学emacs了。再后来，听说yada因为左手需要空出来端咖啡竟也转而使用VI了，毕竟emacs的key-binding实在是太变态了。</p>
+<p>扯远了。</p>
+<p>其实我依然是一个emacs初级用户，现在基本只用emacs做两件事：</p>
+<ul>
+<li><p>写clojure</p>
+</li>
+<li><p>写markdown（即写博客）</p>
+</li>
+</ul>
+<p>早些时候我已经把我的Mac的一些配置都备份在github里了，<a href="https://github.com/jingege/myconfig/blob/master/emacs/mac/.emacs" target="_blank" rel="external">这里</a>是我emacs的配置，需要的可以参考下，包含如下配置：</p>
+<ul>
+<li>erlang mode</li>
+<li>clojure mode相关的一坨，包括nrepl</li>
+<li>自动补全</li>
+<li>显行号，用的是linum</li>
+<li>deep-blue主题，我最喜欢的emacs主题</li>
+<li>隐藏鸡肋一般存在的工具栏</li>
+<li>隐藏滚动条</li>
+<li>启动后自动最大化</li>
+<li>markdown mode，用来写博客</li>
+<li>yasnippet，神器</li>
+<li>rainbow delimiters，彩色括号，特别是对于clojure这种lisp方言，效果参考下图</li>
+<li>ido和lusty explorer，简化mini buffer里的命令输入</li>
+<li>显时间</li>
+<li>yes/no简化成y/n</li>
+<li>yaml mode</li>
+<li>window numbering，给每个buffer定义数字编号，再也不用C-x o了</li>
+<li>git-emacs，不太常用，我还是习惯terminal里用git</li>
+</ul>
+<p>后面几个配置如果你在github没看到的话，那是我还没push上去。</p>
+<p>最后附上我的emacs的真容。</p>
+<p><a href="/images/myemacs.png"><img src="/images/myemacs.png" alt="Emacs"></a></p>
+</div></article><article><header><h2><a href="/2013/09/25/only-support-xterm-terminal/">Only support xterm terminal</a></h2></header><div class="article-meta clearfix"><time class="left">2013 9 月 25 日</time><ul class="tags left"><li><a href="/categories/technology/">技术</a></li></ul><ul class="tags right"><li><a href="/tags/linux/">Linux</a></li></ul></div><div class="markdown-body"><p>前几天用我的Mac版iTerm2登陆服务器时terminal报出错误：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: only support xterm terminal</span><br></pre></td></tr></table></figure>
+<p>我看网上有人建议使用<a href="http://baniu.me/2013/01/mac-ssh%E5%87%BA%E7%8E%B0error-only-support-xterm-terminal%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" target="_blank" rel="external">这个方案</a>，其实是没找到病根。根据错误提示，我们应该用xterm类型的terminal登陆，所以正确的方案有二：</p>
+<ul>
+<li><p>设置环境变量<code>export TERM=xterm</code></p>
+</li>
+<li><p>修改你的ssh客户端的profile，设置terminal type为xterm</p>
+</li>
+</ul>
+<p>上述方式在我的iTerm2和Terminal都通过。</p>
+</div></article><article><header><h2><a href="/2013/09/22/a-hive-online-accident/">记一次Hive线上问题的排查</a></h2></header><div class="article-meta clearfix"><time class="left">2013 9 月 22 日</time><ul class="tags left"><li><a href="/categories/technology/">技术</a></li></ul><ul class="tags right"><li><a href="/tags/hive/">Hive</a></li></ul></div><div class="markdown-body"><p>前几天监控到一个Hive Job CPU偏高，而且长时间无法停止，我最初怀疑是死循环，于是着手排查了下问题，不算太曲折。虽然已经过去多日，细节都快忘了，不过幸亏chrome的history里保留了一些痕迹，让我能把这件事分享出来。</p>
+<p>由于权限有限，只能从运行Hive Job的这台机器查起。首先是要查看下对应的java进程的运行状况，用jstack，失败，抛出如下异常：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sun<span class="class">.jvm</span><span class="class">.hotspot</span><span class="class">.debugger</span><span class="class">.DebuggerException</span>: sun<span class="class">.jvm</span><span class="class">.hotspot</span><span class="class">.debugger</span><span class="class">.DebuggerException</span>: get_thread_regs failed <span class="keyword">for</span> <span class="tag">a</span> lwp</span><br></pre></td></tr></table></figure>
+<p>首次见到，于是google之，得知是JDK6u23之前的一个bug（参考<a href="http://www.blogjava.net/hankchen/archive/2012/04/09/373640.html" target="_blank" rel="external">这里</a>），查看了下故障机的JDK版本，果然低了，奇怪的是只有这台比较低，先不管，升级到1.6.0_31。</p>
+<p>继续jstack，发现没有异常的锁等待。多次jstack查看，主线程都在这个方法里（代码行偶尔不同）：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">org</span><span class="class">.apache</span><span class="class">.hadoop</span><span class="class">.mapred</span><span class="class">.lib</span><span class="class">.CombineFileInputFormat</span><span class="class">.getMoreSplits</span>(<span class="tag">JobConf</span>, <span class="tag">Path</span><span class="attr_selector">[]</span>, <span class="tag">long</span>, <span class="tag">long</span>, <span class="tag">long</span>, <span class="tag">List</span>&lt;<span class="tag">CombineFileSplit</span>&gt;)</span><br></pre></td></tr></table></figure>
+<p>于是基本确定是在上述方法里发生了死循环，于是继续搜索：<code>hadoop getMoreSplits infinite loop</code>，发现社区有个相关的<a href="https://issues.apache.org/jira/browse/MAPREDUCE-2862" target="_blank" rel="external">issue</a>。关键是这句话：</p>
+<blockquote>
+<p>At first, we lost some blocks by mis-operation . Then, one job tried to use these missing blocks. At that time getMoreSplits() goes into the infinite loop.</p>
+</blockquote>
+<p>上面是因为mis-operation导致的，我没有听说有误操作发生，于是去读代码，同时汇报进展，同事听后告诉我确有一台DataNode挂掉了，那么如果确实是一台DataNode的宕机导致了block missing，则相关文件的replication应该为1，继续hadoop fs查看相关文件的replication，果不其然。</p>
+<p>虽然不是十分明确地指出事故原因，但从一系列的分析来看，基本可以断定是上述原因。读了下上述issue提交的patch，大概的思路是在while(true)中检测是否出现了上述情况，如果出现的话，则强行忽略掉出问题的block，起初我还试图把这个patch打进来，但转念一想，这样会导致出现数据丢失，根本就不治本，问题的实质不是hadoop的错，而是hadoop的使用者没能很好地理解HDFS，在hadoop的世界里，错误是常态，虽然hadoop允许将replication设置为1，但用户必须明白的是hadoop没有义务也没有能力确保用户数据万无一失，用户必须学会通过设置合适的参数来避免单点问题。最终我给出了两条建议：</p>
+<ul>
+<li>严禁用户将replication设置为1</li>
+<li>加强线上机器监控</li>
+</ul>
+</div></article><div class="archive-pagination"><div class="paginator"><a class="extend prev" rel="prev" href="/page/2/">&laquo;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/">&raquo;</a></div></div></div><div class="block-sidebar column one-fourth"><div class="widget text-content"><p>博主是一个不是很聪明的码农。完美主义者，强迫症中期。这里会记录一些回忆和点滴，以博为镜。</p>
+<p>武器库：</p>
+<ul>
+<li><a href="http://www.apple.com/cn/macbook-pro/">MacBook Pro</a></li>
+<li><a href="https://www.jetbrains.com/idea/">Intellij IDEA</a></li>
+<li><a href="https://www.iterm2.com/">iTerm2</a></li>
+<li><a href="http://honx.in/_U9DPy38mTieZk3On">红杏</a></li>
+<li><a href="https://www.oracle.com/java/">Java</a>/<a href="http://scala-lang.org/">Scala</a></li>
+</ul>
+</div><div class="widget tags"><ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ant/">Ant</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/btrace/">Btrace</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/clojure/">Clojure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/datax/">DataX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/emacs/">Emacs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hash/">Hash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hive/">Hive</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jumper/">Jumper</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/leiningen/">Leiningen</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mq/">MQ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oozie/">Oozie</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yaserde/">Yaserde</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/memorandum/">备忘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opensource/">开源</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/">生活</a></li></ul></div><div class="widget archives"><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01/">一月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">十月 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">九月 2013</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">五月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a><span class="archive-list-count">1</span></li></ul></div><div class="widget text-content"><p>该博客使用基于 &nbsp;<a href="http://hexo.io">Hexo</a>&nbsp; 的 &nbsp;<a href="https://github.com/jysperm/hexo-theme-simpleblock">simpleblock</a>&nbsp; 主题。博客内容使用 &nbsp;<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn">CC BY-NC-SA 3.0</a>&nbsp; 授权发布。最后生成于 2015-12-11.</p></div></div></div></div><script>window.duoshuoQuery = {short_name: 'jingege'}</script><script src="https://static.duoshuo.com/embed.js"></script></body></html>
