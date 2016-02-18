@@ -10,13 +10,17 @@ tags: [Hive]
 
 由于权限有限，只能从运行Hive Job的这台机器查起。首先是要查看下对应的java进程的运行状况，用jstack，失败，抛出如下异常：
 
-```sun.jvm.hotspot.debugger.DebuggerException: sun.jvm.hotspot.debugger.DebuggerException: get_thread_regs failed for a lwp```
+```
+sun.jvm.hotspot.debugger.DebuggerException: sun.jvm.hotspot.debugger.DebuggerException: get_thread_regs failed for a lwp
+```
 
 首次见到，于是google之，得知是JDK6u23之前的一个bug（参考[这里](http://www.blogjava.net/hankchen/archive/2012/04/09/373640.html)），查看了下故障机的JDK版本，果然低了，奇怪的是只有这台比较低，先不管，升级到1.6.0_31。
 
 继续jstack，发现没有异常的锁等待。多次jstack查看，主线程都在这个方法里（代码行偶尔不同）：
 
-```org.apache.hadoop.mapred.lib.CombineFileInputFormat.getMoreSplits(JobConf, Path[], long, long, long, List<CombineFileSplit>)```
+```
+org.apache.hadoop.mapred.lib.CombineFileInputFormat.getMoreSplits(JobConf, Path[], long, long, long, List<CombineFileSplit>)
+```
 
 于是基本确定是在上述方法里发生了死循环，于是继续搜索：`hadoop getMoreSplits infinite loop`，发现社区有个相关的[issue](https://issues.apache.org/jira/browse/MAPREDUCE-2862)。关键是这句话：
 
