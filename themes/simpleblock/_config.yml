@@ -27,7 +27,7 @@ right_menus:
 ## Banners && Widgets
 banners:
   jade: |
-    
+
     | 小站重新装修，欢迎到访。
 
 widgets:
@@ -40,8 +40,9 @@ widgets:
       * [MacBook Pro](http://www.apple.com/cn/macbook-pro/)
       * [Intellij IDEA](https://www.jetbrains.com/idea/)
       * [iTerm2](https://www.iterm2.com/)
-      * [红杏](http://honx.in/_U9DPy38mTieZk3On)
-      * [Java](https://www.oracle.com/java/)/[Scala](http://scala-lang.org/)
+      * [Shtion](http://shtion.info)
+      * [Java](https://www.oracle.com/java/)
+      * [Scala](http://scala-lang.org/)
 
   -
     tags: true

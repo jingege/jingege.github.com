@@ -4,11 +4,11 @@
 
 # Site
 title: 晋哥哥的私房钱
-subtitle: 
-description: 
+subtitle:
+description:
 author: Bill Zhang
 language: zh-CN
-timezone: 
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -50,7 +50,9 @@ category_map:
   生活: life
   随笔: note
   我的故事: story
+  翻译: translate
 tag_map:
+  翻译: translate
   信息安全: information-security
   软件工程: software-engineering
   PHP: php
