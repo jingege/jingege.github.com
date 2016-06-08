@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://jingege.me/"/>
-  <updated>2015-12-10T17:10:55.000Z</updated>
+  <updated>2016-02-18T06:55:29.000Z</updated>
   <id>http://jingege.me/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://jingege.me/2015/12/10/leave-yhd/"/>
     <id>http://jingege.me/2015/12/10/leave-yhd/</id>
     <published>2015-12-09T16:39:04.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>我不是一个喜欢变化的人，但作为一个还算有点追求的技术人，终究要面对的就是变化，转眼离职我店已经三个月了，一直想着在此处稍作总结，没成想也是一拖再拖。</p>
 <p>今天不展望未来，只简单回顾下在我店两年多的学习和生活。我12年底拿到我店offer，13年初最终决定离开猪厂，成为了一名所谓的基础架构师。首先感谢一面面试官吴总，问的题目都很适合我，也比较庆幸后面面试我的CJ、HL都比较nice。</p>
 <p>入职我店后在大数据团队先混了阵子，和SL一起给Hadoop生态主要成员做了件外皮，后来转到同是架构组的老江手下做消息队列相关研发，终于多年以来对于大并发场景的憧憬成为了现实，激动无比。在SOA团队度过了职业生涯至今最充实的时光，所以其实与其说怀念我店，倒不如说更怀念我们的SOA团队来得准确。</p>
@@ -61,7 +61,7 @@
 </ul>
 <p>这几年整个行业的人员流动都很快，这几位是共事比较久的，多事之秋，其中有四位已经另谋出路。其他的如老虎、智红等先不多说。</p>
 <p>其他的也随便记录下。</p>
-<h4 id="u610F_u672A"><a href="#u610F_u672A" class="headerlink" title="意未"></a>意未</h4><p>公司附近的一家餐厅，想来老板应该是旁边艺术学院的老师，装修机具艺术风格，最有意思的是每天只做一套餐，有兴趣的加微信公众号<code>Artaste_yiwei</code>，可进一步了解其逼格。</p>
+<h4 id="u610F_u672A_u9910_u5385"><a href="#u610F_u672A_u9910_u5385" class="headerlink" title="意未餐厅"></a>意未餐厅</h4><p>公司附近的一家餐厅，在平时吃饭的地方里算最特别的一个，想来老板应该是旁边艺术学院的老师，装修机具艺术风格，最有意思的是每天只做一套餐，有兴趣的加微信公众号<code>Artaste_yiwei</code>，可进一步了解其逼格。</p>
 <h4 id="u5468_u4F1A"><a href="#u5468_u4F1A" class="headerlink" title="周会"></a>周会</h4><p>周五下午会议室或者必胜客，更新下进度、扯扯淡、吹吹牛、喝喝下午茶。后来加入了一个分享环节，唯一的要求就是分享内容尽量不要与工作内容相关。后来股神一直介绍炒股知识，老江的分享逼格更高，不过我只记得有教怎么看手相，常委主打历史牌，最经典的是详细介绍了古代皇帝的三宫六院建制，我分享过易信的架构以及装修必然被坑的历史教训。</p>
 <p>在我店的工作算是比较舒心惬意的，虽然有过几次在高铁上或高速上接到SA电话的黑历史，至于生活，我想，在这个行业，能谈得上有生活，已然算得上不错了。我至今丝毫不避讳对我店的怀念，但人终究是生活在现实中。想记住的太多，反而不知道应该从哪里继续，这里暂时停笔，有缘再补。</p>
 <p>合影附上。</p>
@@ -81,7 +81,7 @@
     <link href="http://jingege.me/2015/08/02/a-btrace-case/"/>
     <id>http://jingege.me/2015/08/02/a-btrace-case/</id>
     <published>2015-08-02T03:01:13.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>本文仅供博主备忘。</p>
 <h4 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h4><p>我目前负责我司的分布式消息队列产品，某日，有业务方上报可能发生少量数据丢失，事态紧急，赶紧排查！</p>
 <h4 id="u9A8C_u8BC1_u95EE_u9898"><a href="#u9A8C_u8BC1_u95EE_u9898" class="headerlink" title="验证问题"></a>验证问题</h4><p>观察监控曲线，发现15分钟动态监控报表的生产和消费确实有数量上的差异，丢失的不算少。这里要说明一下，一般来说如果生产消费是持续不断的，是很难通过此类报表判断出数据丢失，因为消费是有延迟的，统计会在时间维度上产生错位，幸运的是此业务方的消息是定时发送的，大概是一两分钟一批，消费速度也很快，所以统计曲线看起来就像是一条条抛物线，丢不丢一算便知。</p>
@@ -122,7 +122,7 @@
     <link href="http://jingege.me/2015/07/29/move-to-hexo/"/>
     <id>http://jingege.me/2015/07/29/move-to-hexo/</id>
     <published>2015-07-29T12:21:53.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>过而改之，善莫大焉。</p>
 <p>不过，这一年多也不是懒，家事、公事事事操心。如今这博客重新装修下继续营业。后面我会逐渐把这遗失的一段时光写出来，谁让我记性太差。</p>
 <p>为了此次重新开张，我换了工具和主题，放弃了jekyll转而启用hexo，主要是因为这个主题我比较喜欢。不过hexo自定义起来绝不轻松，折腾了好久。</p>
@@ -146,7 +146,7 @@
     <link href="http://jingege.me/2014/01/27/oozie-problems/"/>
     <id>http://jingege.me/2014/01/27/oozie-problems/</id>
     <published>2014-01-27T11:10:25.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>本篇不是oozie的教程，官网的文档虽然比较粗糙，但已经非常全面，可直接参考，下文总结下oozie使用中遇到的一些问题（持续更新中）。</p>
 <p>oozie版本：3.3.2</p>
 <p>###时区问题</p>
@@ -202,7 +202,7 @@
     <link href="http://jingege.me/2014/01/04/learn-clojure-in-y-minutes-translation/"/>
     <id>http://jingege.me/2014/01/04/learn-clojure-in-y-minutes-translation/</id>
     <published>2014-01-04T00:30:00.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>贡献了一篇译文。</p>
 <p>Learn X in Y minutes<br>where X=<a href="http://learnxinyminutes.com/docs/zh-cn/clojure-cn/" target="_blank" rel="external">clojure</a></p>
 ]]></content>
@@ -222,7 +222,7 @@
     <link href="http://jingege.me/2013/10/15/ketama-bug/"/>
     <id>http://jingege.me/2013/10/15/ketama-bug/</id>
     <published>2013-10-15T13:47:16.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>ketama是什么？</p>
 <blockquote>
 <p>C library for consistent hashing, and langauge bindings</p>
@@ -255,7 +255,7 @@
     <link href="http://jingege.me/2013/10/10/my-emacs/"/>
     <id>http://jingege.me/2013/10/10/my-emacs/</id>
     <published>2013-10-10T13:07:52.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>初识emacs还是在大学时代，因为编程比赛获奖而有幸通过面试进入<a href="http://online.cumt.edu.cn" target="_blank" rel="external">学生在线</a>这个大家庭，从而和大炮、yada等同学相识，跟他们学了很多。据说当时技术部新进小同学的时候，要由一名老成员在不经意间秀一下emacs的操作，刺激一下，不过我实在记不起来何时起开始用emacs，似乎是当年和大炮一起用PHP写网站的时候看他用，然后被王垠那篇神作《Emacs是一种信仰！世界最强编辑器介绍》感动之后开始学习的吧。后来毕业后不久听说那帮新来的熊孩子居然把工作室的Linux服务器全部都装成WindowsServer了，真是败家败业！Linux都不用了，想必也没人再去学emacs了。再后来，听说yada因为左手需要空出来端咖啡竟也转而使用VI了，毕竟emacs的key-binding实在是太变态了。</p>
 <p>扯远了。</p>
 <p>其实我依然是一个emacs初级用户，现在基本只用emacs做两件事：</p>
@@ -304,7 +304,7 @@
     <link href="http://jingege.me/2013/09/25/only-support-xterm-terminal/"/>
     <id>http://jingege.me/2013/09/25/only-support-xterm-terminal/</id>
     <published>2013-09-25T13:32:16.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>前几天用我的Mac版iTerm2登陆服务器时terminal报出错误：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: only support xterm terminal</span><br></pre></td></tr></table></figure>
 <p>我看网上有人建议使用<a href="http://baniu.me/2013/01/mac-ssh%E5%87%BA%E7%8E%B0error-only-support-xterm-terminal%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" target="_blank" rel="external">这个方案</a>，其实是没找到病根。根据错误提示，我们应该用xterm类型的terminal登陆，所以正确的方案有二：</p>
@@ -332,7 +332,7 @@
     <link href="http://jingege.me/2013/09/22/a-hive-online-accident/"/>
     <id>http://jingege.me/2013/09/22/a-hive-online-accident/</id>
     <published>2013-09-22T12:10:15.000Z</published>
-    <updated>2015-12-11T03:38:41.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>前几天监控到一个Hive Job CPU偏高，而且长时间无法停止，我最初怀疑是死循环，于是着手排查了下问题，不算太曲折。虽然已经过去多日，细节都快忘了，不过幸亏chrome的history里保留了一些痕迹，让我能把这件事分享出来。</p>
 <p>由于权限有限，只能从运行Hive Job的这台机器查起。首先是要查看下对应的java进程的运行状况，用jstack，失败，抛出如下异常：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sun<span class="class">.jvm</span><span class="class">.hotspot</span><span class="class">.debugger</span><span class="class">.DebuggerException</span>: sun<span class="class">.jvm</span><span class="class">.hotspot</span><span class="class">.debugger</span><span class="class">.DebuggerException</span>: get_thread_regs failed <span class="keyword">for</span> <span class="tag">a</span> lwp</span><br></pre></td></tr></table></figure>
@@ -366,7 +366,7 @@
     <link href="http://jingege.me/2013/09/16/java-non-heap-memory-leaks/"/>
     <id>http://jingege.me/2013/09/16/java-non-heap-memory-leaks/</id>
     <published>2013-09-16T11:03:02.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>去年在一次QA对我们的一台长连接服务器进行压测后，暴露了一个Java内存泄露问题，结合jconsole、jmap等一系列工具分析和代码review，最后发现是一个存放断开的Socket连接的容器，没有合适的清理释放逻辑。这是在java heap上发生的泄露，如果发生了non-heap上的内存泄露，一般会祭上<code>google-perftools</code>来分析。但不像堆上的泄露原因各种各样，non-heap的泄露原因比较常见的只有几种，因为日常开发中很少有机会操作non-heap内存。</p>
 <p>这里总结一下java的non-heap内存泄露原因。其实说白了也就是介绍下日常开发中，哪里有可能接触到non-heap，哪些东西是放到non-heap上的。</p>
 <p>####JNI</p>
@@ -398,7 +398,7 @@
     <link href="http://jingege.me/2013/09/11/an-ant-bug/"/>
     <id>http://jingege.me/2013/09/11/an-ant-bug/</id>
     <published>2013-09-11T09:58:16.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>前几日发现了ant的一个bug。我写的一个打包的ant脚本在我的mac上运行正常，但有同事在windows上则构建失败，我跑到我的windows上测试了下，居然也是失败的，定位了下问题，发现是<code>&lt;jar jarfile=&quot;path/to/a.jar&quot;/&gt;</code>在windows上并未创建相应的path/to二级目录。这是我从没遇到过的情况，我首先想到的是去linux上试了下，打包正常这说明并非我的系统环境有多特殊，于是作为一个MacOS用户，一个诡异的想法便开始形成：我觉得这可能是ant在windows上的bug。</p>
 <p>然后我去apache下载了最新的ant源码，Jar继承了Zip类，扫了一眼相关源码，看到一段：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">File parent = zipFile.getParentFile();</span><br><span class="line"><span class="keyword">if</span> (parent != <span class="keyword">null</span> &amp;&amp; !parent.isDirectory() &amp;&amp; !parent.mkdirs()) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> BuildException(<span class="string">"Failed to create missing parent"</span> + <span class="string">" directory for "</span> + zipFile);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -428,7 +428,7 @@
     <link href="http://jingege.me/2013/09/05/datax-oracle-jdbc-writer-plugin-opensource/"/>
     <id>http://jingege.me/2013/09/05/datax-oracle-jdbc-writer-plugin-opensource/</id>
     <published>2013-09-05T15:15:30.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>项目地址：<a href="https://github.com/jingege/datax-oraclejdbcwriter" target="_blank" rel="external">https://github.com/jingege/datax-oraclejdbcwriter</a></p>
 <blockquote>
 <p>取之于开源，用之于开源</p>
@@ -455,7 +455,7 @@
     <link href="http://jingege.me/2013/09/05/yaserde-opensource/"/>
     <id>http://jingege.me/2013/09/05/yaserde-opensource/</id>
     <published>2013-09-05T14:05:40.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>项目地址：<a href="https://github.com/jingege/yaserde" target="_blank" rel="external">https://github.com/jingege/yaserde</a></p>
 <p>其实当我决定写这个框架的时候，我突然意识到，我想要的正如hadoop的<code>Writable</code>做的，而且hadoop已经做得相当好了。可我还是决定要按自己的思路造一个轮子出来。一来自娱自乐，二来也算是对过去几年遗憾的稍许弥补。目前只做了个雏形，但对于简单场景还是可用的。</p>
 ]]></content>
@@ -479,7 +479,7 @@
     <link href="http://jingege.me/2013/09/03/an-iterator-exception/"/>
     <id>http://jingege.me/2013/09/03/an-iterator-exception/</id>
     <published>2013-09-03T04:03:40.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>今天在一个熟悉的场景首次遇到了异常，在使用ArrayList的Iterator时，抛出了<code>java.lang.IllegalStateException</code>。仔细分析后，发现是一个不合适的循环嵌套，导致了<code>it.remove()</code>连续调用了两次。结合源码看了下，<code>AbstractList$Itr</code>类使用了一个<code>int lastRet</code>变量标记最近一次<code>next()</code>所指向的元素，而在调用<code>it.remove()</code>时，先检查lastRet的值，如果为-1，则抛出<code>IllegalStateException</code>，否则将lastRet置为-1。用以保证一个元素只被remove一次。在Itr类的子类ListIterator里，<code>previous()</code>也是同样原理。</p>
 <p>古人云：</p>
 <blockquote>
@@ -506,7 +506,7 @@
     <link href="http://jingege.me/2013/08/28/user-dir-env-misunderstand/"/>
     <id>http://jingege.me/2013/08/28/user-dir-env-misunderstand/</id>
     <published>2013-08-28T04:03:40.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>今天调试程序的时候，发现我之前hard code的一段路径修改成了<code>System.getProperty(&quot;user.dir&quot;)</code>之后，依然可以正常运行。我一直以来都以为user.dir就是当前用户的home dir，似乎这个印象应该自大学时代就已经有了，所以我有些先入为主地认为是环境有问题。</p>
 <p>我的程序是最终由一个py脚本调用jar包来执行，为了搞明白这个困惑的问题，我在java代码里插入了多处<code>out.println(System.getProperty(&quot;user.dir&quot;))</code>，然后执行py，结果输出并非home dir。于是凭直觉将问题定位在py里的一句<code>os.chdir(sys.path[0]+&quot;/..&quot;)</code>上。再然后我就写了个测试的Main函数，在控制台直接<code>java -cp a.jar path.to.Main</code>，果然输出了当前目录，于是问题清晰了。</p>
 <p>于是网上查了下，竟然是我搞混了。如下摘自<a href="http://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html" target="_blank" rel="external">jdk文档</a>：</p>
@@ -532,7 +532,7 @@
     <link href="http://jingege.me/2013/08/21/4clojure/"/>
     <id>http://jingege.me/2013/08/21/4clojure/</id>
     <published>2013-08-21T10:30:00.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>最近开始在<a href="http://www.4clojure.com/" target="_blank" rel="external">4clojure</a>上刷题，推荐对clojure有兴趣的同学一起来玩。</p>
 <p>正好刷到第38题，贴出来分享下。</p>
 <blockquote>
@@ -560,7 +560,7 @@
     <link href="http://jingege.me/2013/08/09/china-opensource-3-deadly-sins/"/>
     <id>http://jingege.me/2013/08/09/china-opensource-3-deadly-sins/</id>
     <published>2013-08-09T06:51:25.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>“月亮还是外国的圆”</p>
 </blockquote>
@@ -604,7 +604,7 @@
     <link href="http://jingege.me/2013/08/08/lein/"/>
     <id>http://jingege.me/2013/08/08/lein/</id>
     <published>2013-08-08T09:30:00.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>最近为了看storm的源码，开始了clojure的系统学习。clojure因为背负了Java这个历史大包袱，在语法上相对于其他Lisp方言，还是稍显复杂和罗嗦。JVM语言似乎都很难摆脱JAVA的身影，互操作是件很难做得优雅的事情。不过FP的魅力还是让我坚持下来，准备长期作战，不断学习和积累。本文不进一步讨论clojure，只<strong>简单</strong>介绍下使用lein进行clojure工程的构建，因为我个人对gradle很感兴趣（出于对groovy的好感）后续可能会再写一篇使用gradle的构建。</p>
 <p>storm的源码就采用了lein构建，可以看下工程根目录下有project.clj文件。就目前看到的clojure开源项目，用lein的还是居多的。</p>
 <p>##lein的安装##<br>查看lein的github主页：<a href="https://github.com/technomancy/leiningen" target="_blank" rel="external">https://github.com/technomancy/leiningen</a>，对于lein在*nix上的安装，比较简单的步骤是<a href="https://raw.github.com/technomancy/leiningen/stable/bin/lein" target="_blank" rel="external">下载此脚本</a>，放到<code>PATH</code>里，并执行<code>chmod 755 /path/to/lein</code>即可。首次执行该脚本会下载相关的文件并默认安装到<code>~/.lein</code>。</p>
@@ -658,7 +658,7 @@
     <link href="http://jingege.me/2013/05/31/java-references/"/>
     <id>http://jingege.me/2013/05/31/java-references/</id>
     <published>2013-05-31T06:43:40.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>Coding了多年Java，自然早就听说过四种引用类型，不过偶尔也才浅浅的用一下，今天突然想看看这块的内部实现，读了读jdk源码，这篇文章就当做个笔记。先简单介绍下四种引用类型：</p>
 <p>####Java的四种引用类型####</p>
 <ul>
@@ -709,7 +709,7 @@
     <link href="http://jingege.me/2013/03/29/my-github-pages/"/>
     <id>http://jingege.me/2013/03/29/my-github-pages/</id>
     <published>2013-03-29T07:50:45.000Z</published>
-    <updated>2015-12-10T17:10:55.000Z</updated>
+    <updated>2016-02-18T06:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>####缘起</p>
 <p>自我的个人域名因为忘记续费被美帝可耻地抢注后，便再没心情维护我的博客，甚至最后Linode的每月19刀也竟然感觉是个累赘。</p>
 <p>某次在有为同学感慨入职alipay之初的林林总总之后，聊起来是否该重新维护一个博客以记录成长之点滴，于是两人各自去寻安家之所。他去了<a href="http://www.oschina.net" target="_blank" rel="external"><code>oschina</code></a>，我对国内的网络服务一直是实在不放心，便决定好好琢磨下Github Pages。</p>
