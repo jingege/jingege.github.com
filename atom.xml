@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://jingege.me/"/>
-  <updated>2016-06-08T07:11:46.000Z</updated>
+  <updated>2017-02-20T11:13:04.000Z</updated>
   <id>http://jingege.me/</id>
   
   <author>
@@ -13,6 +13,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Omad构建期Mybatis Mapper文件语法检查]]></title>
+    <link href="http://jingege.me/2017/02/20/omad-check-mapper-syntax/"/>
+    <id>http://jingege.me/2017/02/20/omad-check-mapper-syntax/</id>
+    <published>2017-02-20T10:35:11.000Z</published>
+    <updated>2017-02-20T11:13:04.000Z</updated>
+    <content type="html"><![CDATA[<p>去年是忙碌的一年，今年陆续总结回顾下吧。</p>
+<p>我目前所在的项目，使用了Mybatis做ORM，SQL是写到Mapper配置里，所以就导致一个问题，Mapper的语法无法在编译期被检查。而且Mapper错误在运行时的提醒非常晦涩，很难快速定位解决（比如resultType写成了resultMap，服务会不停的重新加载，直到OOM）。特别是开发比较紧张的时期，如果有人写了有问题的Mapper部署到开发服务器上，从发现到解决问题几个回合下来，浪费的不只是一个人的时间，被阻塞的有可能是整个研发团队。</p>
+<p>我于是思考能否在发布前发现类似问题。翻了下资料，Mybaits没有相关检查的工具类，没办法，自己动手，丰衣足食。</p>
+<p>细细想一下，首先是时机问题，编译期是不用考虑了，那么夹在编译期和运行时中间的只有一个构建期，我们项目用了我厂的omad发布系统，构建脚本是ant写的，想到这思路突然就有了：我在构建期启动一下看报不报错不就齐活了？</p>
+<p>于是着手研究错误Mapper导致的异常栈，走读了相关Spring代码，发现第一个DAO方法的调用会触发所有Mapper文件的检查，那么事情就更简单了。</p>
+<p>首先是修改构建脚本，在编译打包完成后主动调用一个main函数，启动一下Mybatis相关的部分：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">target</span> <span class="attr">name</span>=<span class="string">"check-mapper"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">echo</span> <span class="attr">message</span>=<span class="string">"Now to check mybatis mapper files"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">exec</span> <span class="attr">failonerror</span>=<span class="string">"true"</span> <span class="attr">command</span>=<span class="string">"java -cp $&#123;basedir&#125;/compressed/WEB-INF/lib/*:$&#123;basedir&#125;/compressed/WEB-INF/classes com.netease.ysf.device.util.CompileTimeMapperChecker"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">target</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong><em> 这里failonerror设置为true </em></strong>，把这个target放到整个打包的最后一步：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">target</span> <span class="attr">name</span>=<span class="string">"deploy"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">echo</span> <span class="attr">message</span>=<span class="string">"begin auto deploy......"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">antcall</span> <span class="attr">target</span>=<span class="string">"compile"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">antcall</span> <span class="attr">target</span>=<span class="string">"compress-web"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">antcall</span> <span class="attr">target</span>=<span class="string">"cleanTarget"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">antcall</span> <span class="attr">target</span>=<span class="string">"check-mapper"</span>/&gt;</span> <span class="comment">&lt;!--我在这里--&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">target</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>然后最核心的问题就是这个函数该怎么写：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CompileTimeMapperChecker</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            ClassPathXmlApplicationContext context = <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">"classpath:config/spring-for-mapper-checker.xml"</span>);</div><div class="line">            context.start();</div><div class="line">            context.getBean(AccountDAO.class).query(<span class="number">0L</span>);</div><div class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">            System.out.println(e.getClass());</div><div class="line">            String msg = e.getMessage();</div><div class="line">            <span class="keyword">if</span> (msg.contains(<span class="string">"CannotGetJdbcConnectionException"</span>)) &#123;</div><div class="line">                System.exit(<span class="number">0</span>);</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                System.out.println(e.getMessage());</div><div class="line">                System.exit(-<span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>如上，短小精悍，写一个Mapper检查专用的Spring配置，启动上下文后主动调用一次DAO访问，然后检查只要不是<code>CannotGetJdbcConnectionException</code>，就认为必然出了问题，而且极大可能是Mapper的语法不正确。</p>
+<p>这里之所以放过<code>CannotGetJdbcConnectionException</code>是因为omad打包是在独立的打包机执行的，这机器必然没有我们数据库的访问权限，而且只有Mapper检查无误后才会执行真正的DAO操作，也就意味着，它能抛出<code>CannotGetJdbcConnectionException</code>的话，Mapper的检查就是通过的。</p>
+<p>最后看一下专用的Spring配置：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span><span class="meta">?&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></div><div class="line">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="line">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"</span>&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"dataSource"</span> <span class="attr">class</span>=<span class="string">"org.apache.commons.dbcp.BasicDataSource"</span></span></div><div class="line">          <span class="attr">destroy-method</span>=<span class="string">"close"</span>&gt;</div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driverClassName"</span> <span class="attr">value</span>=<span class="string">"driverClassName"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"url"</span> <span class="attr">value</span>=<span class="string">"url"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"username"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"password"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"defaultAutoCommit"</span> <span class="attr">value</span>=<span class="string">"false"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"testOnBorrow"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"sqlSessionFactory"</span> <span class="attr">class</span>=<span class="string">"org.mybatis.spring.SqlSessionFactoryBean"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dataSource"</span> <span class="attr">ref</span>=<span class="string">"dataSource"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"configLocation"</span> <span class="attr">value</span>=<span class="string">"classpath:config/mybatis.xml"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"mapperLocations"</span> <span class="attr">value</span>=<span class="string">"classpath:mapper/*.xml"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.mybatis.spring.mapper.MapperScannerConfigurer"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"basePackage"</span> <span class="attr">value</span>=<span class="string">"com.netease.ysf.device.dao"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"sqlSessionFactoryBeanName"</span> <span class="attr">value</span>=<span class="string">"sqlSessionFactory"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>注意<code>dataSource</code>的配置，参数的value部分随便填填就好了。</p>
+<p>就是这么简单，我只修改了开发环境几个重要工程的打包脚本，添加了这步Mapper文件检查，其他环境也不需要浪费这个时间。后来这几段代码屡立战功，数次把错误的发布挡在运行之前。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>去年是忙碌的一年，今年陆续总结回顾下吧。</p>
+<p>我目前所在的项目，使用了Mybatis做ORM，SQL是写到Mapper配置里，所以就导致一个问题，Mapper的语法无法在编译期被检查。而且Mapper错误在运行时的提醒非常晦涩，很难快速定位解决（比如resultT]]>
+    </summary>
+    
+      <category term="Ant" scheme="http://jingege.me/tags/ant/"/>
+    
+      <category term="Mybatis" scheme="http://jingege.me/tags/Mybatis/"/>
+    
+      <category term="Spring" scheme="http://jingege.me/tags/Spring/"/>
+    
+      <category term="技术" scheme="http://jingege.me/categories/technology/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[译文:@Contended和伪共享]]></title>
@@ -483,9 +522,9 @@
     <![CDATA[<p>项目地址：<a href="https://github.com/jingege/datax-oraclejdbcwriter" target="_blank" rel="external">https://github.com/jingege/datax-oraclejd]]>
     </summary>
     
-      <category term="Java" scheme="http://jingege.me/tags/java/"/>
-    
       <category term="开源" scheme="http://jingege.me/tags/opensource/"/>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
     
       <category term="DataX" scheme="http://jingege.me/tags/datax/"/>
     
@@ -507,9 +546,9 @@
 <p>其实当我决定写这个框]]>
     </summary>
     
-      <category term="Java" scheme="http://jingege.me/tags/java/"/>
-    
       <category term="开源" scheme="http://jingege.me/tags/opensource/"/>
+    
+      <category term="Java" scheme="http://jingege.me/tags/java/"/>
     
       <category term="Yaserde" scheme="http://jingege.me/tags/yaserde/"/>
     
